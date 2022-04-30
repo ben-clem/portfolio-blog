@@ -5,8 +5,8 @@ export const FadeContainer: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.2,
+      delayChildren: 0.1,
+      staggerChildren: 0.1,
     },
   },
 }

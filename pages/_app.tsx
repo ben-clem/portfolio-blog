@@ -1,27 +1,27 @@
-import '@css/tailwind.css'
-import '@components/Nav/nav.css'
+import "@css/tailwind.css";
+import "@components/Nav/nav.css";
 
-import type { AppProps } from 'next/app'
-import { appWithTranslation } from 'next-i18next'
-import NextNProgress from 'nextjs-progressbar'
-import { SessionProvider } from 'next-auth/react'
-import Palette from '@components/Palette'
-import { KBarProvider } from 'kbar'
-import { ThemeProvider } from 'next-themes'
+import type { AppProps } from "next/app";
+import { appWithTranslation } from "next-i18next";
+import NextNProgress from "nextjs-progressbar";
+import { SessionProvider } from "next-auth/react";
+import Palette from "@components/Palette";
+import { KBarProvider } from "kbar";
+import { ThemeProvider } from "next-themes";
 
-import splitbee from '@splitbee/web'
-import actions from '@lib/actions'
+import splitbee from "@splitbee/web";
+import actions from "@lib/actions";
 
 const Portfolio = ({ Component, pageProps }: AppProps) => {
-  splitbee.init()
+  splitbee.init();
 
   return (
     <ThemeProvider
-      attribute='class'
-      defaultTheme='dark'
+      attribute="class"
+      defaultTheme="dark"
       value={{
-        dark: 'dark',
-        light: 'light',
+        dark: "dark",
+        light: "light",
       }}
     >
       <KBarProvider
@@ -32,12 +32,12 @@ const Portfolio = ({ Component, pageProps }: AppProps) => {
       >
         <SessionProvider>
           <Palette />
-          <NextNProgress color='#FF70C6' />
-          <Component {...pageProps} />;
+          <NextNProgress color="#FF70C6" />
+          <Component {...pageProps} />
         </SessionProvider>
       </KBarProvider>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default appWithTranslation(Portfolio)
+export default appWithTranslation(Portfolio);

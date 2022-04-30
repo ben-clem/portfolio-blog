@@ -1,12 +1,15 @@
 {
-  "name": "hxrsh.in",
-  "version": "0.1.0",
-  "private": true,
+  "name": "benclem.dev",
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines" : {
+    "node" : "^16.13.0"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.3",
@@ -23,7 +26,7 @@
     "grapheme-splitter": "^1.0.4",
     "kbar": "^0.1.0-beta.33",
     "next": "12.1.0",
-    "next-auth": "^4.3.1",
+    "next-auth": "^4.3.4",
     "next-contentlayer": "^0.1.2",
     "next-i18next": "^10.5.0",
     "next-themes": "^0.1.1",

@@ -2,7 +2,7 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Wrapper from "@components/Wrapper";
 import { allBlogs, Blog } from "@layer/generated";
-import Newsletter from "@components/Newsletter";
+import Contact from "@components/Contact";
 import Post from "@components/Blog/Post";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import components from "components/MDX";
@@ -16,7 +16,7 @@ const BlogPost: NextPage<{ post: Blog }> = ({ post }) => {
       <div className="blog">
         <Component components={{ ...components }} />
       </div>
-      <Newsletter />
+      <Contact />
     </Wrapper>
   );
 };

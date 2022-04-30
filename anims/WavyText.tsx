@@ -12,7 +12,7 @@ interface Props extends HTMLMotionProps<'div'> {
 const Letter: React.FC<Props> = ({
   text,
   delay = 0,
-  duration = 0.05,
+  duration = 0.025,
   heading,
   ...props
 }: Props) => {

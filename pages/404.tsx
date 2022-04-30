@@ -4,7 +4,7 @@ import { allInfos } from '@layer/generated'
 import Wrapper from '@components/Wrapper'
 import { useTranslation } from 'next-i18next'
 import Header from '@components/Header'
-import Newsletter from '@components/Newsletter'
+import Contact from '@components/Contact'
 import Link from 'next/link'
 
 const About: NextPage = () => {
@@ -25,7 +25,7 @@ const About: NextPage = () => {
           <Link href='/blog'>blog?</Link>
         </p>
       </div>
-      <Newsletter />
+      <Contact />
     </Wrapper>
   )
 }
