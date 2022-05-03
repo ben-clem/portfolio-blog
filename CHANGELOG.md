@@ -17,37 +17,44 @@ Types of changes:
 
 ### To add
 
+- About page links
+- repo link and warning WIP
+- projects
+- blog post
 - package.json license field
 - auto-publishing to Medium & Dev.to
 - Medium & Dev.to links in Blog page
-- About home section
 - French translation
 
 ### To change
 
-- loading indicator color
 - README
-- highlight / loading bar color
 - update 404 page
+- highlight / loading bar color
 - change link color in Projects & Blogs
 - projects page design
-- about page content
+
+### To fix
+
+- download resume button color in light
 
 ### To remove
 
 - AMA, Uses & Stats page
 - footer
 - pages/api
+- rss
 
 ## Added
 
 - projects page
-- made base text color more visible
 - About page
 
 ## Changed
 
 - linked projects overview to projects data
+- about page content
+- made base text color more visible
 
 ## Removed
 

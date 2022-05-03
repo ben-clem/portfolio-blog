@@ -82,6 +82,7 @@ const Intro: FC = () => {
             {t("tagline")}
           </motion.p>
           <Wavy text={t("bio")} heading="p" className="text-xl mt-5 mr-20" />
+
           <Socials />
 
           <Link href="/about" passHref>
@@ -94,6 +95,7 @@ const Intro: FC = () => {
             </motion.a>
           </Link>
         </motion.div>
+        
         <motion.div variants={A.Image} className="hidden sm:block">
           <Image
             src="https://avatars.githubusercontent.com/u/37048286?v=4"

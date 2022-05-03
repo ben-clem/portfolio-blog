@@ -8,7 +8,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { FiCheck, FiClipboard, FiDownload } from "react-icons/fi";
+import { FiCheck, FiClipboard, FiDownload, FiFileText } from "react-icons/fi";
 
 const Link: FC<{ href: string; children: ReactNode }> = ({
   href,
@@ -36,10 +36,24 @@ const Header1: FC<{ children: ReactNode; id: string }> = ({ children, id }) => {
   return (
     <a
       href={`#${id}`}
-      className="my-12 flex items-center group w-fit header no-outline"
+      className="mt-12 mb-8 flex items-center group w-fit header no-outline"
     >
       <h1 className="opacity-0 group-hover:opacity-100 text-3xl">#</h1>
       <h1 id={id} className="text-4xl ml-2">
+        {children}
+      </h1>
+    </a>
+  );
+};
+
+const Header2: FC<{ children: ReactNode; id: string }> = ({ children, id }) => {
+  return (
+    <a
+      href={`#${id}`}
+      className="mt-10 mb-6 flex items-center group w-fit header no-outline"
+    >
+      <h1 className="opacity-0 group-hover:opacity-100 text-2xl">#</h1>
+      <h1 id={id} className="text-3xl ml-2">
         {children}
       </h1>
     </a>
@@ -50,10 +64,10 @@ const Header3: FC<{ children: ReactNode; id: string }> = ({ children, id }) => {
   return (
     <a
       href={`#${id}`}
-      className="text-2xl mb-5 mt-4 flex items-center group w-fit header no-outline"
+      className="mt-8 mb-4 flex items-center group w-fit header no-outline"
     >
-      <h3 className="opacity-0 group-hover:opacity-100">#</h3>
-      <h3 id={id} className="text-3xl ml-2">
+      <h3 className="opacity-0 group-hover:opacity-100 text-xl">#</h3>
+      <h3 id={id} className="text-2xl ml-2">
         {children}
       </h3>
     </a>
@@ -148,11 +162,12 @@ const Copy: FC<{ text: string }> = ({ text }) => {
 const Download: FC = () => {
   return (
     <a
-      className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 flex items-center text-white py-3 px-4 text-xl rounded-lg transition-colors my-5 no-outline w-fit header"
-      href="/pfp.jpg"
-      download="pfp.jpg"
+      className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 flex items-center text-white py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
+      href="/Resume v4.1 EN (ECE career fair 2021).pdf"
+      target="_blank"
     >
-      <FiDownload className="mr-2" /> Download Headshot
+      <FiDownload className="mr-2" />
+      Download my resume
     </a>
   );
 };
@@ -168,6 +183,7 @@ const Table: FC<{ children: ReactChildren }> = ({ children }) => {
 const Components = {
   a: Link,
   h1: Header1,
+  h2: Header2,
   h3: Header3,
   Image: Image,
   pre: CodeBlock,

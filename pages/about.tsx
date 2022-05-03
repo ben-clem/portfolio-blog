@@ -1,34 +1,48 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { GetStaticProps, NextPage } from 'next'
-import { useMDXComponent } from 'next-contentlayer/hooks'
-import { allInfos } from '@layer/generated'
-import components from '@components/MDX'
-import Wrapper from '@components/Wrapper'
-import { useTranslation } from 'next-i18next'
-import Header from '@components/Header'
+import { Fade, FadeContainer } from "@anims/index";
+import Contact from "@components/Contact";
+import components from "@components/MDX";
+import Wrapper from "@components/Wrapper";
+import { allInfos } from "@layer/generated";
+import { motion } from "framer-motion";
+import { GetStaticProps, NextPage } from "next";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Components from "../components/MDX";
 
 const About: NextPage<{ about: { body: { code: string } } }> = ({ about }) => {
-  const Component = useMDXComponent(about.body.code)
-  const { t } = useTranslation('common')
+  const Component = useMDXComponent(about.body.code);
+  const { t } = useTranslation("common");
 
   return (
     <Wrapper>
-      <Header head={t('aboutHeader')} bio={t('aboutBio')} />
-      <div className='blog'>
+      <motion.div variants={FadeContainer} initial="hidden" animate="visible">
+        <motion.div className="flex justify-between items-end">
+          <motion.h1 className="mt-20 text-5xl" variants={Fade}>
+            {t("aboutHeader")}
+          </motion.h1>
+          <Components.Download></Components.Download>
+        </motion.div>
+        <motion.p className="text-lg mt-10" variants={Fade}>
+          {t("aboutBio")}
+        </motion.p>
+      </motion.div>
+      <div className="blog">
         <Component components={components} />
       </div>
+      <Contact />
     </Wrapper>
-  )
-}
+  );
+};
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const about = allInfos.find(
-    (page: { slug: string }) => page.slug === 'about'
-  )!
+    (page: { slug: string }) => page.slug === "about"
+  )!;
 
   return {
-    props: { about, ...(await serverSideTranslations(locale!, ['common'])) },
-  }
-}
+    props: { about, ...(await serverSideTranslations(locale!, ["common"])) },
+  };
+};
 
-export default About
+export default About;

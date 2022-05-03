@@ -24,7 +24,11 @@ const Post: FC<{ project: Project }> = ({ project }) => {
           : document.body.scrollTop),
       bw = (pos / (dh - wh!)) * 100;
 
-    Bar.current!.style.width = `${bw}%`;
+    try {
+      Bar.current!.style.width = `${bw}%`;
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   useEffect(() => {
