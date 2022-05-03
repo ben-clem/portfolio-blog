@@ -2,51 +2,75 @@ import {
   ComputedFields,
   defineDocumentType,
   makeSource,
-} from 'contentlayer/source-files'
-import readingTime from 'reading-time'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeCodeTitles from 'rehype-code-titles'
-import rehypePrism from 'rehype-prism-plus'
+} from "contentlayer/source-files";
+import readingTime from "reading-time";
+import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeCodeTitles from "rehype-code-titles";
+import rehypePrism from "rehype-prism-plus";
 
 const computedFields: ComputedFields = {
-  readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
+  readingTime: { type: "json", resolve: (doc) => readingTime(doc.body.raw) },
   wordCount: {
-    type: 'number',
+    type: "number",
     resolve: (doc) => doc.body.raw.split(/\s+/gu).length,
   },
   slug: {
-    type: 'string',
-    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+    type: "string",
+    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
   },
-}
+};
+
+const Info = defineDocumentType(() => ({
+  name: "Info",
+  filePathPattern: "*.mdx",
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+  },
+  computedFields,
+}));
+
+const Project = defineDocumentType(() => ({
+  name: "Project",
+  filePathPattern: "projects/*.mdx",
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    tags: { type: "string", required: true },
+    published: { type: "string", required: true },
+  },
+  computedFields,
+}));
 
 const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-  filePathPattern: 'blog/*.mdx',
-  contentType: 'mdx',
+  name: "Blog",
+  filePathPattern: "blog/*.mdx",
+  contentType: "mdx",
   fields: {
-    title: { type: 'string', required: true },
-    tags: { type: 'string', required: true },
-    published: { type: 'string', required: true },
+    title: { type: "string", required: true },
+    tags: { type: "string", required: true },
+    published: { type: "string", required: true },
   },
   computedFields,
-}))
+}));
 
-const Random = defineDocumentType(() => ({
-  name: 'Info',
-  filePathPattern: '*.mdx',
-  contentType: 'mdx',
+const Example = defineDocumentType(() => ({
+  name: "Example",
+  filePathPattern: "example-posts/*.mdx",
+  contentType: "mdx",
   fields: {
-    title: { type: 'string', required: true },
+    title: { type: "string", required: true },
+    tags: { type: "string", required: true },
+    published: { type: "string", required: true },
   },
   computedFields,
-}))
+}));
 
 export default makeSource({
-  contentDirPath: 'content',
-  documentTypes: [Random, Blog],
+  contentDirPath: "content",
+  documentTypes: [Info, Project, Blog, Example],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -57,10 +81,10 @@ export default makeSource({
         rehypeAutolinkHeadings,
         {
           properties: {
-            className: ['anchor'],
+            className: ["anchor"],
           },
         },
       ],
     ],
   },
-})
+});

@@ -146,32 +146,11 @@ const LanguageMenu: FC<{
             <motion.a variants={A.Fade}>English</motion.a>
           </Link>
           <Link
-            href={`${meta.root}/hn/${router.asPath}`}
-            passHref
-            locale={false}
-          >
-            <motion.a variants={A.Fade}>हिंदी</motion.a>
-          </Link>
-          <Link
-            href={`${meta.root}/de/${router.asPath}`}
-            passHref
-            locale={false}
-          >
-            <motion.a variants={A.Fade}>Deutsch</motion.a>
-          </Link>
-          <Link
             href={`${meta.root}/fr/${router.asPath}`}
             passHref
             locale={false}
           >
-            <motion.a variants={A.Fade}>Françias</motion.a>
-          </Link>
-          <Link
-            href={`${meta.root}/sr/${router.asPath}`}
-            passHref
-            locale={false}
-          >
-            <motion.a variants={A.Fade}>srpski</motion.a>
+            <motion.a variants={A.Fade}>Français</motion.a>
           </Link>
         </motion.div>
       )}
@@ -186,7 +165,7 @@ const Navbar: FC<{
   const router = useRouter();
   const { t } = useTranslation("common");
   const [open, setOpen] = useState(false);
-  const links = ["home", "ama", "uses", "stats", "blog"];
+  const links = ["home", "about", "projects", "blog"];
   const boundary = useDetectClickOutside({ onTriggered: () => setOpen(false) });
 
   return (

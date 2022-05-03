@@ -5,13 +5,13 @@ import { useTranslation } from "next-i18next";
 import { format } from "timeago.js";
 import { motion } from "framer-motion";
 import * as A from "@anims/index";
-import { allBlogs, Blog } from "@layer/generated";
-allBlogs.sort((a, b) => {
+import { allProjects, Project } from "@layer/generated";
+allProjects.sort((a, b) => {
   return a.published < b.published ? 1 : -1;
 });
 
 const Content: FC<{
-  data: Blog[];
+  data: Project[];
 }> = ({ data }) => {
   const { t } = useTranslation("common");
 
@@ -26,9 +26,9 @@ const Content: FC<{
         {t("projectsHeader")}
       </motion.h1>
       {data.map((item, index) => (
-        <Link href={`/blog/${item.slug}`} key={index} passHref locale={false}>
+        <Link href={`/project/${item.slug}`} key={index} passHref locale={false}>
           <motion.a
-            href={`/blog/${item.slug}`}
+            href={`/project/${item.slug}`}
             className="flex flex-col sm:flex-row items-start sm:items-center justify-between cursor-pointer rounded-lg p-5 hover:bg-gray-200 dark:hover:bg-gray-700"
             variants={A.Fade}
           >
@@ -47,7 +47,7 @@ const Content: FC<{
           </motion.a>
         </Link>
       ))}
-      <Link href="/blog" passHref>
+      <Link href="/projects" passHref>
         <motion.a
           className="flex items-center text-xl group w-fit mt-5"
           variants={A.Fade}
@@ -61,7 +61,7 @@ const Content: FC<{
 };
 
 export const Projects: FC = () => {
-  const blogs = allBlogs.slice(0, 5);
+  const projects = allProjects.slice(0, 5);
 
-  return <Content data={blogs} />;
+  return <Content data={projects} />;
 };

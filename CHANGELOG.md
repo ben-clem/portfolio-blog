@@ -18,25 +18,42 @@ Types of changes:
 ### To add
 
 - package.json license field
-- projects page
 - auto-publishing to Medium & Dev.to
 - Medium & Dev.to links in Blog page
+- About home section
+- French translation
 
 ### To change
 
-- link projects overview to projects page
 - loading indicator color
+- README
+- highlight / loading bar color
+- update 404 page
+- change link color in Projects & Blogs
+- projects page design
+- about page content
 
-### To deprecate
 ### To remove
 
 - AMA, Uses & Stats page
 - footer
+- pages/api
 
-### To fix
-### To secure
+## Added
 
-## [0.0.1](https://github.com/ben-clem/portfolio-blog/releases/tag/v0.0.1) - DATE
+- projects page
+- made base text color more visible
+- About page
+
+## Changed
+
+- linked projects overview to projects data
+
+## Removed
+
+- other translations
+
+## [0.0.1](https://github.com/ben-clem/portfolio-blog/releases/tag/v0.0.1) - 2022-04-30
 
 ### Added
 
@@ -52,10 +69,6 @@ Types of changes:
 - spacing
 - transformed newsletter card into contact card
 
-### Deprecated
 ### Removed
 
 - footer
-
-### Fixed
-### Security
