@@ -8,7 +8,7 @@ const Header: FC<{ head: string; bio: string }> = ({ head, bio }) => {
       <motion.h1 className='mt-20 text-5xl' variants={Fade}>
         {head}
       </motion.h1>
-      <motion.p className='text-xl mt-5 mb-20' variants={Fade}>
+      <motion.p className='text-xl mt-5 mb-12' variants={Fade}>
         {bio}
       </motion.p>
     </motion.div>

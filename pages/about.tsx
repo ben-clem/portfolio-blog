@@ -23,10 +23,10 @@ const About: NextPage<{ about: { body: { code: string } } }> = ({ about }) => {
           </motion.h1>
           <Components.Download></Components.Download>
         </motion.div>
-        <motion.p className="text-lg mt-10" variants={Fade}>
-          {t("aboutBio")}
-        </motion.p>
       </motion.div>
+      <motion.p className="text-lg mt-10" variants={Fade}>
+        {t("aboutBio")}
+      </motion.p>
       <div className="blog">
         <Component components={components} />
       </div>

@@ -28,8 +28,8 @@ export const FastFadeContainer: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0,
-      staggerChildren: 0.1,
+      delayChildren: 0.01,
+      staggerChildren: 0.01,
     },
   },
 }

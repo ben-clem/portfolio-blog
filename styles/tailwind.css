@@ -40,6 +40,10 @@ li {
   @apply text-gray-600 dark:text-gray-300 text-base;
 }
 
+p strong {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
 li {
   @apply ml-10 text-lg list-disc;
 }

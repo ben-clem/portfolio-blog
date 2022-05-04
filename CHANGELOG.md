@@ -17,10 +17,19 @@ Types of changes:
 
 ### To add
 
-- About page links
 - repo link and warning WIP
 - projects
+  - JEECE test
+  - node-messenger
+  - portfolio/blog
+  - ?Breakthrough SF
 - blog post
+  - first blog post about? (my first article, reading)
+  - GoodSync
+  - BetterTouchTool
+  - Notion stuff
+  - mechanical keyboard
+  - Qbserve
 - package.json license field
 - auto-publishing to Medium & Dev.to
 - Medium & Dev.to links in Blog page
@@ -29,14 +38,19 @@ Types of changes:
 ### To change
 
 - README
+- Projects & Blog tags list
 - update 404 page
 - highlight / loading bar color
 - change link color in Projects & Blogs
 - projects page design
+- revamp blog page
 
 ### To fix
 
 - download resume button color in light
+- responsive broken
+  - logo
+  -
 
 ### To remove
 
@@ -49,12 +63,15 @@ Types of changes:
 
 - projects page
 - About page
+- About page links and emphasis
 
 ## Changed
 
 - linked projects overview to projects data
 - about page content
 - made base text color more visible
+- icon.png
+- revamped projects page
 
 ## Removed
 
