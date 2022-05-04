@@ -59,14 +59,14 @@ const Contact: FC = () => {
           ))}
         </motion.div>
       </div>
-      <motion.div className="flex justify-center mb-4">
-        <motion.p className="text-sm hidden sm:flex" variants={A.Fade}>
+      <motion.div className="flex flex-row justify-center mb-4">
+        <p className="text-sm">
           {t("WIP1")}
           <motion.a
             href="https://github.com/ben-clem/portfolio-blog"
             target="_blank"
             rel="noreferrer"
-            className="flex flex-row"
+            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
@@ -75,10 +75,10 @@ const Contact: FC = () => {
           </motion.a>
           {t("WIP2")}
           <motion.a
-            href="https://github.com/ben-clem/portfolio-blog"
+            href="https://github.com/ben-clem/portfolio-blog/blob/master/CHANGELOG.md"
             target="_blank"
             rel="noreferrer"
-            className="flex flex-row"
+            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
@@ -87,10 +87,10 @@ const Contact: FC = () => {
           </motion.a>
           {t("WIP3")}
           <motion.a
-            href="https://github.com/ben-clem/portfolio-blog"
+            href="https://github.com/ben-clem/portfolio-blog/issues"
             target="_blank"
             rel="noreferrer"
-            className="flex flex-row"
+            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
@@ -98,7 +98,7 @@ const Contact: FC = () => {
             {t("there")}
           </motion.a>
           {t("WIP4")}
-        </motion.p>
+        </p>
       </motion.div>
 
       <motion.div className="flex justify-center mb-32">

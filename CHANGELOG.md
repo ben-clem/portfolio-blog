@@ -17,7 +17,6 @@ Types of changes:
 
 ### To add
 
-- **repo link, warning WIP, report issue**
 - **projects (vraiment rapide)**
   - **portfolio/blog**
   - **JEECE test**
@@ -56,16 +55,20 @@ Types of changes:
 - **responsive broken**
 - **white mode broken**
 
-## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-04-30
+### Added
 
-## Added
+- repo link, warning WIP, report issue
+
+## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-05-04
+
+### Added
 
 - projects page
 - About page
 - About page links and emphasis
 - Medium & Dev.to links in Blog page
 
-## Changed
+### Changed
 
 - linked projects overview to projects data
 - about page content
@@ -74,7 +77,7 @@ Types of changes:
 - revamped projects page
 - revamped blog page
 
-## Removed
+### Removed
 
 - other translations
 - AMA, Uses & Stats page
