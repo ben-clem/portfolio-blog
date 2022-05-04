@@ -13,7 +13,7 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...HEAD)
+## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.2...HEAD)
 
 ### To add
 
@@ -33,11 +33,13 @@ Types of changes:
   - ? Baja California road trip
   - ? West Coast road trip (coming soon)
   - ? Book reviews
+  - ? Products review (Huel)
 - package.json license field
 - auto-publishing to Medium & Dev.to
 - **French translation**
 - Filter by tags toggle
 - auto add tags from projects & posts
+- **deploy**
 
 ### To change
 
@@ -54,7 +56,7 @@ Types of changes:
 - **responsive broken**
 - **white mode broken**
 
-### To remove
+## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-04-30
 
 ## Added
 

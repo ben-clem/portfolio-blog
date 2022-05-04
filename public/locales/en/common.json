@@ -50,5 +50,10 @@
   "navigate": "to quickly navigate this site",
   "lost": "You seem... lost?",
   "broken": "Is something broken? feel free to open up an issue at ",
-  "readBlog": "...and while you're here, why not read a few articles on my "
+  "readBlog": "...and while you're here, why not read a few articles on my ",
+  "WIP1": "This website is still a WIP, you can find the code for it ",
+  "WIP2": ", look at the CHANGELOG ",
+  "WIP3": ", and report bugs or request features ",
+  "WIP4": ".",
+  "there": "there"
 }

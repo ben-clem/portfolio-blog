@@ -13,7 +13,7 @@ const Contact: FC = () => {
 
   return (
     <>
-      <div className="flex mt-28 mb-5 p-5 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2">
+      <div className="flex mt-28 mb-8 p-5 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2">
         <div>
           <h1>{t("contactCardTitle")}</h1>
           <p className="mt-5 text-lg">{t("contactCardContent")}</p>
@@ -59,8 +59,50 @@ const Contact: FC = () => {
           ))}
         </motion.div>
       </div>
+      <motion.div className="flex justify-center mb-4">
+        <motion.p className="text-sm hidden sm:flex" variants={A.Fade}>
+          {t("WIP1")}
+          <motion.a
+            href="https://github.com/ben-clem/portfolio-blog"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-row"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            variants={A.Fade}
+          >
+            {t("there")}
+          </motion.a>
+          {t("WIP2")}
+          <motion.a
+            href="https://github.com/ben-clem/portfolio-blog"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-row"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            variants={A.Fade}
+          >
+            {t("there")}
+          </motion.a>
+          {t("WIP3")}
+          <motion.a
+            href="https://github.com/ben-clem/portfolio-blog"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-row"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            variants={A.Fade}
+          >
+            {t("there")}
+          </motion.a>
+          {t("WIP4")}
+        </motion.p>
+      </motion.div>
+
       <motion.div className="flex justify-center mb-32">
-        <motion.p className="text-sm mt-4 hidden sm:flex" variants={A.Fade}>
+        <motion.p className="text-sm hidden sm:flex" variants={A.Fade}>
           {t("tip")}
           <button
             onClick={query.toggle}
