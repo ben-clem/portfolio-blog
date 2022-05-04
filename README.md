@@ -26,7 +26,7 @@
 - [Framer Motion](https://framer.com/motion)
 - [Feather Icons](https://feathericons.com/)
 - [Prettier](https://prettier.io)
-- [ESLint](https://eslint.io)
+- [ESLint](https://eslint.org/)
 
 # 🚀 Quickstart
 
