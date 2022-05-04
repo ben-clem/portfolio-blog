@@ -8,8 +8,6 @@ const nextConfig = withContentlayer()({
   images: {
     domains: [
       'avatars.githubusercontent.com',
-      'dev-to-uploads.s3.amazonaws.com',
-      'i.scdn.co',
     ],
   },
   i18n,

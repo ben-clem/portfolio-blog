@@ -18,7 +18,7 @@ const About: NextPage<{ about: { body: { code: string } } }> = ({ about }) => {
     <Wrapper>
       <motion.div variants={FadeContainer} initial="hidden" animate="visible">
         <motion.div className="flex justify-between items-end">
-          <motion.h1 className="mt-20 text-5xl" variants={Fade}>
+          <motion.h1 className="mt-12 text-5xl" variants={Fade}>
             {t("aboutHeader")}
           </motion.h1>
           <Components.Download></Components.Download>

@@ -9,7 +9,7 @@ const Header: FC<{ head: string; bio: string; variant?: string }> = ({
 }) => {
   return (
     <motion.div variants={FadeContainer} initial="hidden" animate="visible">
-      <motion.h1 className="mt-20 text-5xl" variants={Fade}>
+      <motion.h1 className="mt-12 text-5xl" variants={Fade}>
         {head}
       </motion.h1>
       {variant == "mb-2" ? (

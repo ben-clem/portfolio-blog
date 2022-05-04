@@ -61,7 +61,7 @@ const Content: FC<{
 };
 
 export const Blogs: FC = () => {
-  const blogs = allBlogs.slice(0, 5);
+  const blogs = allBlogs.slice(0, 3);
 
   return <Content data={blogs} />;
 };

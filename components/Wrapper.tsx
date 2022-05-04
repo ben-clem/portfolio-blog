@@ -2,7 +2,6 @@ import { FC, ReactNode, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Nav/Nav";
-import Footer from "./Footer";
 import BackToTop from "./Top";
 import NextLink from "next/link";
 

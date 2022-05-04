@@ -17,57 +17,51 @@ Types of changes:
 
 ### To add
 
-- repo link and warning WIP
-- projects
-  - JEECE test
-  - node-messenger
-  - portfolio/blog
-  - ?Breakthrough SF
-- blog post
-  - first blog post about? (my first article, reading)
-  - GoodSync
-  - BetterTouchTool
-  - Notion stuff
-  - mechanical keyboard
-  - Qbserve
-  - Baja California road trip
-  - West Coast road trip (coming soon)
+- **repo link, warning WIP, report issue**
+- **projects (vraiment rapide)**
+  - **portfolio/blog**
+  - **JEECE test**
+  - **node-messenger**
+  - **Breakthrough SF**
+- blog posts
+  - **first blog post (my first article, what this blog will be about)**
+  - ? GoodSync
+  - ? BetterTouchTool
+  - ? Notion stuff
+  - ? mechanical keyboard
+  - ? Qbserve
+  - ? Baja California road trip
+  - ? West Coast road trip (coming soon)
+  - ? Book reviews
 - package.json license field
 - auto-publishing to Medium & Dev.to
-- Medium & Dev.to links in Blog page
-- French translation
+- **French translation**
 - Filter by tags toggle
+- auto add tags from projects & posts
 
 ### To change
 
-- README
-- Projects & Blog tags list
-- update 404 page
-- highlight / loading bar color
-- change link color in Projects & Blogs
-- projects page design
-- revamp blog page
+- **README**
+- **Projects & Blog tags list based of added projects & blog post**
+- **update 404 page**
+- **highlight / loading bar color**
+- refactor some stuff
+- **kbar actions**
 
 ### To fix
 
-- download resume button color in light
-- responsive broken
-  - logo
-  -
-- white mode broken
+- **download resume button color in light**
+- **responsive broken**
+- **white mode broken**
 
 ### To remove
-
-- AMA, Uses & Stats page
-- footer
-- pages/api
-- rss
 
 ## Added
 
 - projects page
 - About page
 - About page links and emphasis
+- Medium & Dev.to links in Blog page
 
 ## Changed
 
@@ -76,10 +70,13 @@ Types of changes:
 - made base text color more visible
 - icon.png
 - revamped projects page
+- revamped blog page
 
 ## Removed
 
 - other translations
+- AMA, Uses & Stats page
+- footer
 
 ## [0.0.1](https://github.com/ben-clem/portfolio-blog/releases/tag/v0.0.1) - 2022-04-30
 

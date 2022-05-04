@@ -66,7 +66,7 @@ const Content: FC<{
 };
 
 export const Projects: FC = () => {
-  const projects = allProjects.slice(0, 5);
+  const projects = allProjects.slice(0, 3);
 
   return <Content data={projects} />;
 };

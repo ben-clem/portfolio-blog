@@ -34,31 +34,10 @@ const CommandBar = () => {
         parent: 'locale',
       },
       {
-        id: 'hn',
-        name: 'Hindi',
-        keywords: 'hn',
-        perform: () => router.push('/hn'),
-        parent: 'locale',
-      },
-      {
-        id: 'de',
-        name: 'German',
-        keywords: 'de german deutsch',
-        perform: () => router.push('/de'),
-        parent: 'locale',
-      },
-      {
         id: 'fr',
         name: 'French',
         keywords: 'france fr',
         perform: () => router.push('/fr'),
-        parent: 'locale',
-      },
-      {
-        id: 'sr',
-        name: 'Serbian',
-        keywords: 'sr',
-        perform: () => router.push('/sr'),
         parent: 'locale',
       },
     ])

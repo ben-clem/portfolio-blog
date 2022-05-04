@@ -127,7 +127,7 @@ const Blog: FC = () => {
         </Link>
       </motion.div>
 
-      <motion.h1 variants={Fade} className="mt-6 text-bold text-2xl">
+      <motion.h1 variants={Fade} className="mt-12 text-bold text-2xl">
         Filter by tags
       </motion.h1>
       <motion.div

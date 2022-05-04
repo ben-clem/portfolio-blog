@@ -1,6 +1,6 @@
 {
   "name": "benclem.dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -12,10 +12,6 @@
     "node": "^16.13.0"
   },
   "dependencies": {
-    "@next-auth/prisma-adapter": "^1.0.3",
-    "@prisma/client": "^3.11.1",
-    "@splitbee/web": "^0.3.0",
-    "@types/dompurify": "^2.3.3",
     "babel-plugin-superjson-next": "^0.4.3",
     "contentlayer": "^0.1.2",
     "date-fns": "^2.28.0",
