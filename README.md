@@ -1,93 +1,44 @@
-![image](https://user-images.githubusercontent.com/69592270/119919017-87f4b580-bf37-11eb-9567-92b86338c4e9.png)
+![banner](/public/banner.png)
 
 <p align="center">
-  <a href="https://hxrsh.in/">
-    <h2 align="center">Harsh Singh</h2>
+  <a href="https://benclem.dev">
+    <h2 align="center">benclem.dev</h2>
   </a>
-</p> 
-<p align="center">15yo web developer and designer</p>
+</p>
 <p align="center">
-  <a href="https://hxrsh.in">Home</a>
+  <a href="https://benclem.dev">Home</a>
     ·
-  <a href="https://hxrsh.in/ama">Ask Me Anything</a>
+  <a href="https://benclem.dev/projects">Projects</a>
     ·
-  <a href="https://hxrsh.in/uses">Uses</a>
+  <a href="https://benclem.dev/blog">Blog</a>
     ·
-  <a href="https://hxrsh.in/stats">Stats</a>
-    ·
-  <a href="https://hxrsh.in/blog">Blog</a>
+  <a href="https://benclem.dev/about">About</a>
  </p>
+
+# 🔨 Tools Used
+
+- [TypeScript](https://typescriptlang.org)
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [contentlayer](https://www.contentlayer.dev/)
+- [rehype](https://github.com/rehypejs/rehype)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://framer.com/motion)
+- [Feather Icons](https://feathericons.com/)
+- [Prettier](https://prettier.io)
+- [ESLint](https://eslint.io)
 
 # 🚀 Quickstart
 
 Run the website locally
 
 ```
-git clone https://github.com/harshhhdev/harshhhdev.github.io.git
-```
-
-## Setting up the project
-
-```bash
-cd harshhhdev.github.io
-
-# Install deps
-yarn
-```
-
-## Setting up the environment
-
-Now, rename `.env.EXAMPLE` to `.env`
-
-First, create a new database from [CockroachDB serverless](https://cockroachlabs.cloud) and paste the connection string in `DATABASE_URL`.
-
-Register a new [Spotify application](https://developer.spotify.com/), and paste your credentials onto the proper fields. Next, obtain a `REFRESH_TOKEN` by following [this tutorial](https://leerob.io/blog/spotify-api-nextjs).
-
-Finally, head over onto [GitHub](https://github.com), and go into [Settings](https://github.com/settings) > [Developer Settings](https://github.com/settings/apps) > [OAuth apps](https://github.com/settings/developers) and hit "New OAuth App". Configure the app to your needs, and copy/paste the information onto your `.env` file accordingly.
-
-## Starting server
-
-```bash
+git clone https://github.com/ben-clem/portfolio-blog.git
+cd portfolio-blog
+yarn install
 yarn dev
 ```
 
-Server should now be running on [localhost](https://localhost:3000)
+# 💡 Inspiration
 
-# 🔨 Tools Used
-
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://typescriptlang.org)
-- [TailwindCSS](https://tailwindcss.com/)
-- [CockroachDB](https://cockroachlabs.com/)
-- [Framer Motion](https://framer.com/motion)
-- [Prisma](https://prisma.io/)
-- [SWR](https://swr.vercel.app/)
-- [contentlayer](https://www.contentlayer.dev/)
-- [NextAuth](https://next-auth.js.org/)
-- [Feather Icons](https://feathericons.com/)
-- [Splitbee](https://splitbee.io/)
-- [rehype](https://github.com/rehypejs/rehype)
-- [Prettier](https://prettier.io)
-- [ESLint](https://eslint.io)
-
-# 🌎 Adding Translations
-
-Interested in contributing to this repository? Add translations for a language you know!
-
-First, go into the `public` directory and create a new folder with the code of your language. Inside that, create a new file called `common.json`. Paste the file from `public/en/common.json` to get a template of what the content in English would be, then begin to translate it into the language of your choice!
-
-Special thanks to:
-
-- [FleshMobProductions](https://github.com/FleshMobProductions) and [Yän](https://twitter.com/YaenGames) for German translations
-- [CodeMyst](https://github.com/codemyst) for Serbian translations
-- [Jirushi](https://twitter.com/Jirushi_I) for French translations
-
-# 🤞 Contributing
-
-After setting up the project, and making changes:
-
-```git
-git add .
-git commit -m "commit message"
-git push YOUR_REPO_URL YOUR_BRANCH
-```
+This project is largely inspired by [harshhhdev](https://github.com/harshhhdev) / [harshhhdev.github.io](https://github.com/harshhhdev/harshhhdev.github.io), who I thank for his work.

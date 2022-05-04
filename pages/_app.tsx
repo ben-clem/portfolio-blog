@@ -9,11 +9,9 @@ import Palette from "@components/Palette";
 import { KBarProvider } from "kbar";
 import { ThemeProvider } from "next-themes";
 
-import splitbee from "@splitbee/web";
 import actions from "@lib/actions";
 
 const Portfolio = ({ Component, pageProps }: AppProps) => {
-  splitbee.init();
 
   return (
     <ThemeProvider

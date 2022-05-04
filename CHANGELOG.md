@@ -42,7 +42,6 @@ Types of changes:
 
 ### To change
 
-- **README**
 - **Projects & Blog tags list based of added projects & blog post**
 - **update 404 page**
 - **highlight / loading bar color**
@@ -58,6 +57,10 @@ Types of changes:
 ### Added
 
 - repo link, warning WIP, report issue
+
+### Changed
+
+- README
 
 ## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-05-04
 
