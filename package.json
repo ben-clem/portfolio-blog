@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines" : {
-    "node" : "^16.13.0"
+  "engines": {
+    "node": "^16.13.0"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.3",

@@ -48,7 +48,13 @@ const Topic: FC<{
   );
 };
 
-const Post: FC<ProjectProps> = ({ slug, title, tags, published }) => {
+const Post: FC<ProjectProps> = ({
+  slug,
+  title,
+  tags,
+  published,
+  readingTime,
+}) => {
   return (
     <Link href={`/projects/${slug}`} passHref locale={false}>
       <motion.a className={tags} variants={Fade}>
@@ -56,9 +62,14 @@ const Post: FC<ProjectProps> = ({ slug, title, tags, published }) => {
           className="h-64 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
           style={{ backgroundImage: `url("/static/${slug}.jpg")` }}
         />
-        <h1 className="text-2xl mt-5 text-white">{title}</h1>
-        <p className="text-lg mt-3">
-          {format(Date.parse(published), "dd MMMM, yyyy")}
+        <h1 className="text-2xl mt-5 text-white text-center hover:underline">
+          {title}
+        </h1>
+        <p className="text-md mt-2 text-center hover:text-white">
+          {format(Date.parse(published), "MMMM dd, yyyy")}
+          {" · "}
+          {Math.trunc(readingTime.minutes)}
+          {" minute read"}
         </p>
       </motion.a>
     </Link>

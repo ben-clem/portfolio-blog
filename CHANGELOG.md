@@ -30,10 +30,13 @@ Types of changes:
   - Notion stuff
   - mechanical keyboard
   - Qbserve
+  - Baja California road trip
+  - West Coast road trip (coming soon)
 - package.json license field
 - auto-publishing to Medium & Dev.to
 - Medium & Dev.to links in Blog page
 - French translation
+- Filter by tags toggle
 
 ### To change
 
@@ -51,6 +54,7 @@ Types of changes:
 - responsive broken
   - logo
   -
+- white mode broken
 
 ### To remove
 
