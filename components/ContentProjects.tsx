@@ -27,7 +27,7 @@ const Content: FC<{
       </motion.h1>
       {data.map((item, index) => (
         <Link
-          href={`/project/${item.slug}`}
+          href={`/projects/${item.slug}`}
           key={index}
           passHref
           locale={false}
