@@ -107,7 +107,7 @@ pre[class*="language-"] {
 }
 
 .project img {
-  @apply block rounded sm:rounded-xl my-24 mx-auto lg:scale-110;
+  @apply block rounded sm:rounded-xl my-10 mx-auto lg:scale-110;
 }
 
 .project pre {

@@ -1,0 +1,88 @@
+---
+title: "FireChat: Adaltas WebTech Course Project"
+tags: "JavaScript, Node.js, Express, LevelDB, Dex, SuperTest, React, Create React App, React Router, Material UI, Emotion, React Testing Library"
+published: "2020-12-09"
+---
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-19-45 React App.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  FireChat homepage
+</p>
+<br />
+
+[FireChat](https://github.com/ben-clem/node-messenger) is a project I realized in 2020 for a course I was following at [ECE Paris](https://en.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique). This course was taught by [David Worms](https://github.com/wdavidw), CEO of Adaltas, and its goal was to introduce us to Web Technologies through labs on different topics of the JavaScript environment:
+
+- Node.js
+- Express
+- SQL & NoSQL databases
+- React (JSX, Function Components, Hooks)
+- Material Design & Material UI
+- OAuth & OpenID Connect
+
+Each module had its own lab and we then implemented what we had learned on our semester project. You can find the content of this course on [this repo](https://github.com/adaltas/ece-webtech-2022-spring). I did this project in collaboration with my friend [Marin Neyret](https://www.linkedin.com/in/marin-neyret-664b9b142/) whom I thank.
+
+The goal of this project was to build a basic messaging web app. You can find the full project requirements [there](https://github.com/ben-clem/node-messenger/blob/master/INSTRUCTIONS.md).
+
+👉🏼 [GitHub repo](https://github.com/ben-clem/node-messenger)
+
+# 👨🏻‍🔧 Tech Stack
+
+## Server
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org)
+- [Express](https://expressjs.com/)
+- [LevelDB](https://github.com/google/leveldb)
+- [Dex](https://github.com/dexidp/dex)
+- [SuperTest](https://github.com/visionmedia/supertest)
+
+## Web
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://reactjs.org/) w/ [Create React App](https://github.com/facebook/create-react-app)
+- [React Router](https://reactrouter.com/)
+- [Material UI](https://mui.com/)
+- [Emotion](https://emotion.sh/docs/introduction)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+# 📸 Screenshots
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-24-31 Build software better together.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Login with GitHub via Dex
+</p>
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-40-53 React App.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  A discussion channel
+</p>
+
+The user can switch between the different channels he created or has been invited to. He can see info about the other users in the channel. He can modify and delete his messages.
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-26-10 React App.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Creating a new channel
+</p>
+
+The user can select/deselect members and invite new ones via email.
+
+<br />
+<div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+  <img
+    width="40%"
+    src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-28-15 React App.png"
+  />
+  <img
+    width="40%"
+    src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/node-messenger/Screenshot 2022-05-04 at 21-28-35 React App.png"
+  />
+</div>
+<p align="center" style={{ textDecoration: "underline" }}>
+  Settings
+</p>
+
+User can change its randomly generated username and his avatar. Avatars are being fetched from Gravatar or selected from a list, I didn't have time to implement uploading your own.

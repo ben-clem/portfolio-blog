@@ -1,9 +1,80 @@
 ---
-title: 'Junior Enterprise Web Dev Technical Test'
-tags: 'Node.js, TypeScript, JavaScript, PostgreSQL, TypeORM, Express, GraphQL, TypeGraphQL, Apollo GraphQL, React, Next.js, Chakra UI, urql'
-published: '2022-03-13'
+title: "JEECE Collab: Junior Enterprise Web Dev Technical Test"
+tags: "Node.js, TypeScript, JavaScript, PostgreSQL, TypeORM, Express, GraphQL, TypeGraphQL, Apollo GraphQL, React, Next.js, Chakra UI, urql, Socket.IO, Formik, FilePond"
+published: "2021-03-24"
 ---
-<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/dev/public/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-05-16 Screenshot.png" width="40%"></img>
-tset
-![JEECE-collab.jpg](https://raw.githubusercontent.com/ben-clem/portfolio-blog/dev/public/img/JEECE-collab.jpg)
-test
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-05-16 Screenshot.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  JEECE Collab main page
+</p>
+<br />
+
+[JEECE Collab](https://github.com/ben-clem/JEECE-collab) is a project I realized in March 2021 as a technical test to integrate [JEECE](https://jeece.fr/), the junior company of my school, [ECE Paris](https://en.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique).
+
+The goal was to develop a web platform for collaborative work. It would allow employees of a company to communicate via instant messaging, and admin accounts would be able to distribute documents to the desired departments. You can find the full project requirements [there](https://github.com/ben-clem/JEECE-collab/blob/master/instructions.pdf) (in French).
+
+This project made me accepted at JEECE, and allowed me to learn many things.
+
+👉🏼 [GitHub repo](https://github.com/ben-clem/JEECE-collab)
+
+# 👨🏻‍🔧 Tech Stack
+
+## Server
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org)
+- [PostgreSQL](https://www.postgresql.org/): relational DB (schema)
+- [TypeORM](https://typeorm.io/): Object-Relational Mapping (server to DB)
+- [Express](https://expressjs.com/)
+- [GraphQL](https://graphql.org/) w/ [type-graphql](https://typegraphql.com) & [Apollo Server](https://www.apollographql.com/docs/apollo-server) for API queries (client to server)
+
+## Web
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/) w/ [Next.js](https://nextjs.org/) & [Chakra UI](https://chakra-ui.com/)
+- [urql](https://formidable.com/open-source/urql/): GraphQL client
+- [Socket.IO](https://socket.io/)
+- [Formik](https://formik.org/)
+- [FilePond](https://pqina.nl/filepond/)
+
+This stack was inspired by this [14 hour video tutorial by Ben Awad](https://www.youtube.com/watch?v=I6ypD7qv3Z8). One could say that this is certainly overkill given the requirements of the project. But I had already done a [slightly similar project](/projects/node-messenger) not so long ago, so it was a good opportunity for me to learn new technologies.
+
+# 📸 Screenshots
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-00-51 Screenshot.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Register form made with Formik
+</p>
+
+Styling & Dark mode come from Chakra UI. The error message is directly being fetched from the server, where regex rules are applied.
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-05-16 Screenshot" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Employee dashboard
+</p>
+
+The employee has access to the files relevant to him, he can see his conversations, and can start new ones via the search bar.
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-16-20 Screenshot.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Instant messaging with Socket.IO
+</p>
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-16-30 Screenshot.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Same page in Light mode
+</p>
+
+<br />
+<img src="https://raw.githubusercontent.com/ben-clem/portfolio-blog/master/public/static/img/posts/JEECE-collab/Screenshot 2022-05-04 at 15-02-44 Screenshot.png" />
+<p align="center" style={{ textDecoration: "underline" }}>
+  Admin dashboard
+</p>
+
+Here the admins can accept or reject new accounts as requested in the specifications. They can also upload files for the services and positions they choose. The file upload process is supported by the FilePond library.

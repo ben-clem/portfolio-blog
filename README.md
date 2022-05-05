@@ -18,15 +18,12 @@
 # 🔨 Tools Used
 
 - [TypeScript](https://typescriptlang.org)
-- [React](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/) w/ [Next.js](https://nextjs.org/)
 - [contentlayer](https://www.contentlayer.dev/)
 - [rehype](https://github.com/rehypejs/rehype)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Framer Motion](https://framer.com/motion)
 - [Feather Icons](https://feathericons.com/)
-- [Prettier](https://prettier.io)
-- [ESLint](https://eslint.org/)
 
 # 🚀 Quickstart
 

@@ -58,7 +58,7 @@ const Blog = defineDocumentType(() => ({
 
 const Example = defineDocumentType(() => ({
   name: "Example",
-  filePathPattern: "example-posts/*.mdx",
+  filePathPattern: "example/*.mdx",
   contentType: "mdx",
   fields: {
     title: { type: "string", required: true },

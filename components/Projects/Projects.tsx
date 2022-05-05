@@ -60,13 +60,13 @@ const Post: FC<ProjectProps> = ({
       <motion.a className={tags} variants={Fade}>
         <div
           className="h-64 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
-          style={{ backgroundImage: `url("/img/${slug}.jpg")` }}
+          style={{ backgroundImage: `url("/static/img/thumbnails/${slug}.jpg")` }}
         />
         <h1 className="text-2xl mt-5 text-white text-center hover:underline">
           {title}
         </h1>
         <p className="text-md mt-2 text-center hover:text-white">
-          {format(Date.parse(published), "MMMM dd, yyyy")}
+          {format(Date.parse(published), "MMMM yyyy")}
           {" · "}
           {Math.trunc(readingTime.minutes)}
           {" minute read"}
@@ -80,13 +80,23 @@ const Projects: FC = () => {
   const topics = [
     "Apollo GraphQL",
     "Chakra UI",
+    "Create React App",
+    "Dex",
+    "Emotion",
     "Express",
+    "FilePond",
+    "Formik",
     "GraphQL",
     "JavaScript",
+    "LevelDB",
+    "Material UI",
     "Next.js",
     "Node.js",
     "PostgreSQL",
     "React",
+    "React Router",
+    "Socket.IO",
+    "SuperTest",
     "TypeGraphQL",
     "TypeORM",
     "TypeScript",

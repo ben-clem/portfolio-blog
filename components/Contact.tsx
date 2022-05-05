@@ -7,13 +7,19 @@ import * as A from "@anims/index";
 
 import { useKBar } from "kbar";
 
-const Contact: FC = () => {
+const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
   const { t } = useTranslation("common");
   const { query } = useKBar();
 
   return (
     <>
-      <div className="flex mt-28 mb-8 p-5 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2">
+      <div
+        className={
+          "flex " +
+          variant +
+          " mb-8 p-5 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2"
+        }
+      >
         <div>
           <h1>{t("contactCardTitle")}</h1>
           <p className="mt-5 text-lg">{t("contactCardContent")}</p>

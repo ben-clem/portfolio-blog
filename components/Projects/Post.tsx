@@ -49,7 +49,7 @@ const Post: FC<{ project: Project }> = ({ project }) => {
       <h1 className="text-4xl xl:text-6xl">{project.title}</h1>
       <div className="flex justify-between mt-6">
         <p className="text-base sm:text-xl">
-          {format(Date.parse(project.published), "dd MMMM, yyyy")}
+          {format(Date.parse(project.published), "MMMM yyyy")}
         </p>
         <div className="flex">
           <div className="text-lg sm:text-xl flex justify-center items-center text-gray-400">

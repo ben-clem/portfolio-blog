@@ -163,7 +163,7 @@ const Download: FC = () => {
   return (
     <a
       className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 flex items-center text-white py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
-      href="/Resume v4.1 EN (ECE career fair 2021).pdf"
+      href="/static/Resume v4.1 EN (ECE career fair 2021).pdf"
       target="_blank"
     >
       <FiDownload className="mr-2" />

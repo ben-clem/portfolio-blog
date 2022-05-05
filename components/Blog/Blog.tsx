@@ -57,7 +57,7 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
         <div className="flex">
           <div
             className="h-32 w-32 flex-none mr-6 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
-            style={{ backgroundImage: `url("/img/${slug}.jpg")` }}
+            style={{ backgroundImage: `url("/img/thumbnails/${slug}.jpg")` }}
           />
           <div className="flex items-center">
             <div>
