@@ -44,7 +44,7 @@ const Post: FC<{ project: Project }> = ({ project }) => {
         className="fixed top-0 left-0 w-0 h-1 overflow-hidden z-10"
         ref={Bar}
       >
-        <div className="w-full h-full absolute bg-gradient-100" />
+        <div className="w-full h-full absolute bg-teal-600 dark:bg-teal-600" />
       </div>
       <h1 className="text-4xl xl:text-6xl">{project.title}</h1>
       <div className="flex justify-between mt-6">

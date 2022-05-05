@@ -1,4 +1,4 @@
-![banner](/public/banner.png)
+![banner](/public/static/img/banner.png)
 
 <p align="center">
   <a href="https://benclem.dev">

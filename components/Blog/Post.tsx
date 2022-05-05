@@ -8,6 +8,9 @@ const Post: FC<{ blog: Blog }> = ({ blog }) => {
   const { height, width } = useWindowDimensions();
   const Bar = useRef<HTMLDivElement>(null);
 
+  const date = new Date(blog.published + "T00:00:00Z");
+  date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+
   const listener = () => {
     let dh = Math.max(
         document.body.scrollHeight,
@@ -44,13 +47,11 @@ const Post: FC<{ blog: Blog }> = ({ blog }) => {
         className="fixed top-0 left-0 w-0 h-1 overflow-hidden z-10"
         ref={Bar}
       >
-        <div className="w-full h-full absolute bg-gradient-100" />
+        <div className="w-full h-full absolute bg-teal-600 dark:bg-teal-600" />
       </div>
       <h1 className="text-4xl xl:text-6xl">{blog.title}</h1>
       <div className="flex justify-between mt-6">
-        <p className="text-base sm:text-xl">
-          {format(Date.parse(blog.published), "MMMM dd, yyyy")}
-        </p>
+        <p className="text-base sm:text-xl">{format(date, "MMMM dd, yyyy")}</p>
         <div className="flex">
           <div className="text-lg sm:text-xl flex justify-center items-center text-gray-400">
             <FiClock className="mr-2" />

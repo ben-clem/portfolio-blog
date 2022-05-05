@@ -18,7 +18,7 @@ Types of changes:
 ### To add
 
 - projects (vraiment rapide)
-  - **Breakthrough SF**
+  - **Breakthrough SF** <= project ou blog ???
   - portfolio/blog (when published and good enough)
 - blog posts
   - **first blog post (my first article, what this blog will be about)**
@@ -33,15 +33,14 @@ Types of changes:
   - ? Products review (Huel)
 - **deploy**
 - package.json license field
-- auto-publishing to Medium & Dev.to
-- French translation
+- auto-publishing to Medium & Dev.to => not sure that can work with MDX
+- **French translation**
 - Filter by tags toggle
 - auto add tags from projects & posts
 - sitemap and robots.txt: https://tuomokankaanpaa.com/blog/nextjs-seo-how-to-add-sitemap-and-robots-txt
 
 ### To change
 
-- **highlight / loading bar color**
 - Projects & Blog tags list based of added projects & blog post
 - refactor some stuff
 - kbar actions
@@ -52,6 +51,7 @@ Types of changes:
 - **responsive broken**
 - **white mode broken**
   - **download resume button color in light**
+  - **links in posts**
 
 ### Added
 
@@ -64,6 +64,8 @@ Types of changes:
 
 - README
 - updated 404 page
+- highlight / loading bar color
+
 
 ## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-05-04
 

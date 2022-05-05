@@ -51,19 +51,26 @@ const Topic: FC<{
 };
 
 const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
+  const date = new Date(published + "T00:00:00Z");
+  date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+
   return (
-    <Link href={`/projects/${slug}`} passHref locale={false}>
+    <Link href={`/blog/${slug}`} passHref locale={false}>
       <motion.a className={tags} variants={Fade}>
         <div className="flex">
           <div
             className="h-32 w-32 flex-none mr-6 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
-            style={{ backgroundImage: `url("/img/thumbnails/${slug}.jpg")` }}
+            style={{
+              backgroundImage: `url("/static/img/thumbnails/blog/${slug}.jpg")`,
+            }}
           />
           <div className="flex items-center">
             <div>
-              <h1 className="text-3xl mb-2 text-white hover:underline">{title}</h1>
+              <h1 className="text-3xl mb-2 text-white hover:underline">
+                {title}
+              </h1>
               <p className="text-lg hover:text-white">
-                {format(Date.parse(published), "MMMM dd, yyyy")}
+                {format(date, "MMMM dd, yyyy")}
                 {" · "}
                 {Math.trunc(readingTime.minutes)}
                 {" minute read"}
@@ -77,24 +84,7 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
 };
 
 const Blog: FC = () => {
-  const topics = [
-    "React",
-    "UI/UX",
-    "Next",
-    "Vercel",
-    "CockroachDB",
-    "Prisma",
-    "Databases",
-    "Figma",
-    "Design",
-    "TypeScript",
-    "CSS",
-    "GraphQL",
-    "serverless",
-    "PlanetScale",
-    "SQL",
-    "Productivity",
-  ];
+  const topics = ["?", "?", "?"];
   const [active, setActive] = useState("");
   const filteredPosts = filter(active);
 
