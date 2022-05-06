@@ -1,11 +1,12 @@
-import Link from "next/link";
-import { FC } from "react";
-import { FiEye, FiChevronRight } from "react-icons/fi";
-import { useTranslation } from "next-i18next";
-import { format } from "timeago.js";
-import { motion } from "framer-motion";
 import * as A from "@anims/index";
 import { allBlogs, Blog } from "@layer/generated";
+import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
+import Link from "next/link";
+import { FC } from "react";
+import { FiChevronRight } from "react-icons/fi";
+import { format } from "timeago.js";
+
 allBlogs.sort((a, b) => {
   return a.published < b.published ? 1 : -1;
 });
@@ -47,7 +48,7 @@ const Content: FC<{
           </motion.a>
         </Link>
       ))}
-      <Link href="/blog" passHref>
+      <Link href="/blog" passHref scroll={true}>
         <motion.a
           className="flex items-center text-xl group w-fit mt-5"
           variants={A.Fade}

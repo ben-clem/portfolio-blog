@@ -1,8 +1,25 @@
+import { Fade, FastFadeContainer } from "@anims/index";
+import useWindowDimensions from "@hooks/useWindowDimensions";
 import { Project } from "@layer/generated";
+import { format } from "date-fns";
+import { motion } from "framer-motion";
 import { FC, useEffect, useRef } from "react";
 import { FiClock, FiEdit2 } from "react-icons/fi";
-import { format } from "date-fns";
-import useWindowDimensions from "@hooks/useWindowDimensions";
+
+const Topic: FC<{
+  text: string;
+}> = ({ text }) => {
+  return (
+    <motion.button
+      className={
+        "text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
+      }
+      variants={Fade}
+    >
+      {text}
+    </motion.button>
+  );
+};
 
 const Post: FC<{ project: Project }> = ({ project }) => {
   const { height, width } = useWindowDimensions();
@@ -47,24 +64,34 @@ const Post: FC<{ project: Project }> = ({ project }) => {
         <div className="w-full h-full absolute bg-teal-600 dark:bg-teal-600" />
       </div>
       <h1 className="text-4xl xl:text-6xl">{project.title}</h1>
-      <div className="flex justify-between mt-6">
-        <p className="text-base sm:text-xl">
+      <div className="flex justify-between mt-4">
+        <p className="text-lg sm:text-xl flex justify-center items-center text-gray-400">
           {format(Date.parse(project.published), "MMMM yyyy")}
         </p>
         <div className="flex">
-          <div className="text-lg sm:text-xl flex justify-center items-center text-gray-400">
-            <FiClock className="mr-2" />
+          <div className="text-lg sm:text-xl flex justify-center text-gray-400 items-center">
+            <FiClock className="mr-2 text-lg sm:text-xl" />
             {Math.trunc(project.readingTime.minutes)}
             {Math.trunc(project.readingTime.minutes) === 1
               ? " minute"
               : " minutes"}
           </div>
-          <div className="text-lg sm:text-xl flex items-center justify-center ml-5 text-gray-400">
+          <div className="text-lg sm:text-xl flex items-center text-gray-400 justify-center ml-5">
             <FiEdit2 className="mr-2 text-lg sm:text-xl" />
             {project.wordCount} words
           </div>
         </div>
       </div>
+      <motion.div
+        variants={FastFadeContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-wrap gap-y-2 gap-x-3 my-2"
+      >
+        {project.tags.split(", ").map((topic, index) => (
+          <Topic text={topic} key={index} />
+        ))}
+      </motion.div>
     </div>
   );
 };

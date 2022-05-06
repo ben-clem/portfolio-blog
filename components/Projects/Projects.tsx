@@ -1,16 +1,12 @@
+import { Fade, FadeContainer, FastFadeContainer } from "@anims/index";
 import Header from "@components/Header";
-import { format } from "date-fns";
-import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
-import { Project as ProjectProps } from "@layer/generated/types";
 import { allProjects } from "@layer/generated";
-import Link from "next/link";
-import { useTranslation } from "next-i18next";
+import { Project as ProjectProps } from "@layer/generated/types";
+import { format } from "date-fns";
 import { motion } from "framer-motion";
-import { FastFadeContainer, FadeContainer, Fade } from "@anims/index";
-
-allProjects.sort((a, b) => {
-  return a.published < b.published ? 1 : -1;
-});
+import { useTranslation } from "next-i18next";
+import Link from "next/link";
+import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
 
 const filter = (query: string) => {
   if (!query) return allProjects;
@@ -48,13 +44,7 @@ const Topic: FC<{
   );
 };
 
-const Post: FC<ProjectProps> = ({
-  slug,
-  title,
-  tags,
-  published,
-  readingTime,
-}) => {
+const Post: FC<ProjectProps> = ({ slug, title, published, readingTime }) => {
   return (
     <Link href={`/projects/${slug}`} passHref locale={false}>
       <motion.a className="sm:w-64 w-96" variants={Fade}>
@@ -79,36 +69,18 @@ const Post: FC<ProjectProps> = ({
 };
 
 const Projects: FC = () => {
-  const topics = [
-    "Apollo GraphQL",
-    "Chakra UI",
-    "Create React App",
-    "Dex",
-    "Emotion",
-    "Express",
-    "FilePond",
-    "Formik",
-    "GraphQL",
-    "JavaScript",
-    "LevelDB",
-    "Material UI",
-    "Next.js",
-    "Node.js",
-    "PostgreSQL",
-    "React",
-    "React Router",
-    "React Testing Library",
-    "Socket.IO",
-    "SuperTest",
-    "TypeGraphQL",
-    "TypeORM",
-    "TypeScript",
-    "urql",
-  ];
   const [active, setActive] = useState("");
   const filteredPosts = filter(active);
-
   const { t } = useTranslation("common");
+
+  const tagsSet = new Set();
+  allProjects.forEach((project) => {
+    const tagsStringArr = project.tags.split(", ");
+    tagsStringArr.forEach((tagsString) => {
+      tagsSet.add(tagsString);
+    });
+  });
+  const topics: string[] = Array.from(tagsSet).sort() as string[];
 
   return (
     <motion.div className="w-full" initial="hidden" animate="visible">

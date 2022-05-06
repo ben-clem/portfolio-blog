@@ -1,4 +1,3 @@
-import * as A from "@anims/index";
 import { Fade, FadeContainer, FastFadeContainer } from "@anims/index";
 import Header from "@components/Header";
 import { allBlogs } from "@layer/generated";
@@ -8,11 +7,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
-import { FiChevronRight } from "react-icons/fi";
-
-allBlogs.sort((a, b) => {
-  return a.published < b.published ? 1 : -1;
-});
 
 const filter = (query: string) => {
   if (!query) return allBlogs;
@@ -50,7 +44,7 @@ const Topic: FC<{
   );
 };
 
-const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
+const Post: FC<BlogProps> = ({ slug, title, published, readingTime }) => {
   const date = new Date(published + "T00:00:00Z");
   date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
 
@@ -85,11 +79,18 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
 };
 
 const Blog: FC = () => {
-  const topics = ["Art", "Crafts", "San Francisco", "Tech"];
   const [active, setActive] = useState("");
   const filteredPosts = filter(active);
-
   const { t } = useTranslation("common");
+
+  const tagsSet = new Set();
+  allBlogs.forEach((blog) => {
+    const tagsStringArr = blog.tags.split(", ");
+    tagsStringArr.forEach((tagsString) => {
+      tagsSet.add(tagsString);
+    });
+  });
+  const topics: string[] = Array.from(tagsSet).sort() as string[];
 
   return (
     <motion.div className="w-full" initial="hidden" animate="visible">

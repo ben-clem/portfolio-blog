@@ -8,7 +8,7 @@ const BackToTop: FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setShowButton(window.pageYOffset > 500)
+      setShowButton(window.pageYOffset > 300)
     }
 
     window.addEventListener('scroll', toggleVisibility)

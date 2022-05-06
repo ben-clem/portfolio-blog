@@ -17,7 +17,6 @@ Types of changes:
 
 ### To add
 
-- **diplaying tags in posts**
 - **deploy**
 - package.json license field
 - posts
@@ -30,8 +29,7 @@ Types of changes:
     - ? Road trips (Baja California, US West Coast)
     - ? Book reviews (GM charrette)
     - ? Product reviews (Huel)
-- Filter by tags toggle
-- auto add tags from projects & posts
+- Filter by tags toggle (sm:minimize-button open-button)
 - sitemap and robots.txt: https://tuomokankaanpaa.com/blog/nextjs-seo-how-to-add-sitemap-and-robots-txt
 - auto-publishing to Medium & Dev.to => not sure that can work with MDX
 
@@ -46,8 +44,14 @@ Types of changes:
 - **white mode broken**
   - **download resume button color in light**
   - **links in posts**
-- **hamburger menu urls are broken when inside post**
+- **responsive**
+  - **post header in lg - xl**
 - translation: going to a post gets you back to default language
+
+### Added
+
+- diplaying tags in posts
+- auto adding tags from posts
 
 ### Fixed
 
@@ -59,6 +63,10 @@ Types of changes:
   - projects
   - blog
   - about
+- hamburger menu urls broken when inside post
+- blog page not scrolling to top when accessed
+- blog page not displaying scroll to top button
+
 
 ## [0.0.4](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...v0.0.4) - 2022-05-06
 

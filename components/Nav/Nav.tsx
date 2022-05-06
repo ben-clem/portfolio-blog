@@ -203,6 +203,7 @@ const Navbar: FC<{
 };
 
 const MobileMenu: FC<{ links: string[]; t: TFunction }> = ({ links, t }) => {
+  console.log(links);
   return (
     <motion.div
       className="absolute bg-gray-100 dark:bg-gray-900 w-screen h-screen top-0 left-0 z-10"
@@ -214,7 +215,9 @@ const MobileMenu: FC<{ links: string[]; t: TFunction }> = ({ links, t }) => {
       <motion.div className="mt-32 ml-8 flex flex-col">
         {links.map((link, index) => (
           <Link
-            href={link.toLowerCase() === "home" ? "/" : link.toLowerCase()}
+            href={
+              link.toLowerCase() === "home" ? "/" : "/" + link.toLowerCase()
+            }
             key={index}
             passHref
           >
