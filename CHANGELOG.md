@@ -17,20 +17,16 @@ Types of changes:
 
 ### To add
 
-- projects (vraiment rapide)
-  - **Breakthrough SF** <= project ou blog ???
-  - portfolio/blog (when published and good enough)
-- blog posts
-  - **first blog post (my first article, what this blog will be about)**
-  - ? GoodSync
-  - ? BetterTouchTool
-  - ? Notion stuff
-  - ? mechanical keyboard
-  - ? Qbserve
-  - ? Baja California road trip
-  - ? West Coast road trip (coming soon)
-  - ? Book reviews
-  - ? Products review (Huel)
+- posts
+  - projects
+    - portfolio/blog (when published and good enough)
+  - blog
+    - ? Gary Boodhoo's Image Garden workshop (https://deepdreamvisionquest.atlassian.net/wiki/spaces/imagegarden/overview, https://drive.google.com/drive/u/0/folders/1EeArG2maO-3IMfkNs33fels769O_p4Ly)
+    - ? GoodSync review and config
+    - ? BetterTouchTool review and config
+    - ? Road trips (Baja California, US West Coast)
+    - ? Book reviews (GM charrette)
+    - ? Product reviews (Huel)
 - **deploy**
 - package.json license field
 - auto-publishing to Medium & Dev.to => not sure that can work with MDX
@@ -60,6 +56,8 @@ Types of changes:
 - projects posts
   - JEECE tech test
   - node-messenger
+- blog posts
+  - Breakthrough SF
 
 ### Changed
 

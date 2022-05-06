@@ -111,7 +111,7 @@ const Projects: FC = () => {
     <motion.div className="w-full" initial="hidden" animate="visible">
       <Header head={t("projectHeader")} bio={t("projectBio")} />
       <motion.h1 variants={Fade} className="mt-6 text-bold text-2xl">
-        Filter by tags
+        Filter by tag
       </motion.h1>
       <motion.div
         variants={FastFadeContainer}

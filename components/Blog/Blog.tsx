@@ -84,7 +84,7 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
 };
 
 const Blog: FC = () => {
-  const topics = ["?", "?", "?"];
+  const topics = ["Art", "Crafts", "San Francisco", "Tech"];
   const [active, setActive] = useState("");
   const filteredPosts = filter(active);
 
@@ -118,7 +118,7 @@ const Blog: FC = () => {
       </motion.div>
 
       <motion.h1 variants={Fade} className="mt-12 text-bold text-2xl">
-        Filter by tags
+        Filter by tag
       </motion.h1>
       <motion.div
         variants={FastFadeContainer}
