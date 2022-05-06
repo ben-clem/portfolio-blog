@@ -15,7 +15,7 @@ import {
 
 const Socials: FC = () => {
   return (
-    <motion.div className="flex mt-7" variants={A.FadeContainer}>
+    <motion.div className="flex sm:mt-7 mt-5" variants={A.FadeContainer}>
       {[
         {
           icon: FiGithub,
@@ -57,55 +57,70 @@ const Intro: FC = () => {
   const { t } = useTranslation("common");
 
   return (
+    <motion.div
+      className="sm:mt-20 mt-10 flex items-start"
+      variants={A.FadeContainer}
+      initial="hidden"
+      animate="visible"
+    >
       <motion.div
-        className="mt-20 flex items-start"
+        className="flex-1"
         variants={A.FadeContainer}
         initial="hidden"
         animate="visible"
       >
-        <motion.div
-          className="flex-1"
-          variants={A.FadeContainer}
-          initial="hidden"
-          animate="visible"
+        <motion.div variants={A.Image} className="self-center sm:hidden mb-10">
+          <div className="flex justify-center">
+            <Image
+              src="https://avatars.githubusercontent.com/u/37048286?v=4"
+              width={150}
+              height={150}
+              alt="Profile"
+              className="rounded-full"
+            />
+          </div>
+        </motion.div>
+        <motion.h1
+          className="sm:text-5xl text-4xl text-teal-600 dark:text-teal-600 w-fit h-fit pt-2 "
+          variants={A.Fade}
         >
-          <motion.h1
-            className="text-5xl text-teal-600 dark:text-teal-600 h-16 w-fit pt-2 "
+          {t("header")}
+        </motion.h1>
+        <motion.p
+          className="text-gray-900 dark:text-white sm:text-xl text-lg mt-3"
+          variants={A.Fade}
+        >
+          {t("tagline")}
+        </motion.p>
+        <Wavy
+          text={t("bio")}
+          heading="p"
+          className="sm:text-xl text-lg sm:mt-5 mt-3 mr-20"
+        />
+
+        <Socials />
+
+        <Link href="/about" passHref>
+          <motion.a
+            className="flex items-center text-xl group w-fit sm:mt-7 mt-5"
             variants={A.Fade}
           >
-            {t("header")}
-          </motion.h1>
-          <motion.p
-            className="text-gray-900 dark:text-white text-xl mt-3"
-            variants={A.Fade}
-          >
-            {t("tagline")}
-          </motion.p>
-          <Wavy text={t("bio")} heading="p" className="text-xl mt-5 mr-20" />
-
-          <Socials />
-
-          <Link href="/about" passHref>
-            <motion.a
-              className="flex items-center text-xl group w-fit mt-7"
-              variants={A.Fade}
-            >
-              {t("about")}
-              <FiChevronRight className="group-hover:translate-x-1 transition-all ml-1 mt-1" />
-            </motion.a>
-          </Link>
-        </motion.div>
-        
-        <motion.div variants={A.Image} className="hidden sm:block">
-          <Image
-            src="https://avatars.githubusercontent.com/u/37048286?v=4"
-            width={150}
-            height={150}
-            alt="Profile"
-            className="rounded-full"
-          />
-        </motion.div>
+            {t("about")}
+            <FiChevronRight className="group-hover:translate-x-1 transition-all ml-1 mt-1" />
+          </motion.a>
+        </Link>
       </motion.div>
+
+      <motion.div variants={A.Image} className="hidden sm:block">
+        <Image
+          src="https://avatars.githubusercontent.com/u/37048286?v=4"
+          width={150}
+          height={150}
+          alt="Profile"
+          className="rounded-full"
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 

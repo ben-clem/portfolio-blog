@@ -25,7 +25,7 @@ const NavItem: FC<{ href: string; text: string; router: NextRouter }> = ({
           isActive
             ? "font-semibold text-gray-800 dark:text-gray-200"
             : "font-normal text-gray-600 dark:text-gray-400"
-        } sm:inline-block rounded-lg hover:text-gray-900 dark:hover:text-gray-50 transition-all text-lg mr-4 sm:mr-7 hidden`}
+        } sm:inline-block rounded-lg hover:text-gray-900 dark:hover:text-gray-50 transition-all text-lg mr-8 hidden`}
       >
         <span className="capsize">{text}</span>
       </a>
@@ -237,7 +237,7 @@ const Hamburger: FC<{
 }> = ({ open, setOpen }) => {
   return (
     <svg
-      className={`ham hamRotate ham8 sm:hidden ${open && "active"}`}
+      className={`${open && "active"} ham hamRotate ham8 visible sm:hidden`}
       viewBox="0 0 100 100"
       width="50"
       onClick={() => setOpen((open) => !open)}

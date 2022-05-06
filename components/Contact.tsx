@@ -15,18 +15,18 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
     <>
       <div
         className={
-          "flex " +
-          variant +
-          " mb-8 p-5 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2"
+          "flex sm:flex-row flex-col mb-8 p-5 sm:pb-5 pb-2 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2 " +
+          " " +
+          variant
         }
       >
         <div>
           <h1>{t("contactCardTitle")}</h1>
-          <p className="mt-5 text-lg">{t("contactCardContent")}</p>
+          <p className="sm:mt-5 mt-2 text-lg">{t("contactCardContent")}</p>
         </div>
 
         <motion.div
-          className="flex flex-col pt-3 ml-10 border-l border-gray-500 dark:border-gray-200"
+          className="flex flex-col sm:pt-3 pt-5 sm:ml-10 mt-5 sm:border-l sm:border-t-0 border-t border-gray-500 dark:border-gray-200"
           variants={A.FadeContainer}
         >
           {[
@@ -52,7 +52,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="flex flex-row ml-10 mb-5"
+                className="flex flex-row sm:ml-10 ml-3 mb-5"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.8 }}
                 variants={A.Fade}

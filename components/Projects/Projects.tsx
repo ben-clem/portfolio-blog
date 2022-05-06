@@ -35,7 +35,7 @@ const Topic: FC<{
 
   return (
     <motion.button
-      className={`text-md p-1 rounded-full flex justify-center align-center transition-all ${
+      className={`text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity ${
         active
           ? "bg-gray-900 dark:bg-gray-100 hover:bg-gray-700 dark:hover:bg-gray-300 text-gray-100 dark:text-gray-900"
           : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
@@ -57,9 +57,9 @@ const Post: FC<ProjectProps> = ({
 }) => {
   return (
     <Link href={`/projects/${slug}`} passHref locale={false}>
-      <motion.a className={tags} variants={Fade}>
+      <motion.a className="sm:w-64 w-96" variants={Fade}>
         <div
-          className="h-64 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
+          className="sm:h-64 h-96 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
           style={{
             backgroundImage: `url("/static/img/thumbnails/projects/${slug}.jpg")`,
           }}
@@ -97,6 +97,7 @@ const Projects: FC = () => {
     "PostgreSQL",
     "React",
     "React Router",
+    "React Testing Library",
     "Socket.IO",
     "SuperTest",
     "TypeGraphQL",
@@ -119,7 +120,7 @@ const Projects: FC = () => {
         variants={FastFadeContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-rows-auto grid-cols-2 sm:grid-cols-6 gap-2 mt-5"
+        className="flex flex-wrap gap-y-2 gap-x-3 mt-5"
       >
         {topics.map((topic, index) => (
           <Topic
@@ -134,7 +135,7 @@ const Projects: FC = () => {
         variants={FadeContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-rows-auto sm:grid-cols-3 gap-10 mt-10"
+        className="flex flex-wrap justify-center gap-10 mt-10"
       >
         {filteredPosts!.map((project, index) => (
           <Post {...project} key={index} />

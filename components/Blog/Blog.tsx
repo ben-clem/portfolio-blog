@@ -37,7 +37,7 @@ const Topic: FC<{
 
   return (
     <motion.button
-      className={`text-md p-1 rounded-full flex justify-center align-center transition-all ${
+      className={`text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity ${
         active
           ? "bg-gray-900 dark:bg-gray-100 hover:bg-gray-700 dark:hover:bg-gray-300 text-gray-100 dark:text-gray-900"
           : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
@@ -56,8 +56,8 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
 
   return (
     <Link href={`/blog/${slug}`} passHref locale={false}>
-      <motion.a className={tags} variants={Fade}>
-        <div className="flex">
+      <motion.a variants={Fade}>
+        <div className="flex items-center">
           <div
             className="h-32 w-32 flex-none mr-6 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
             style={{
@@ -71,7 +71,8 @@ const Post: FC<BlogProps> = ({ slug, title, tags, published, readingTime }) => {
               </h1>
               <p className="text-lg hover:text-white">
                 {format(date, "MMMM dd, yyyy")}
-                {" · "}
+              </p>
+              <p className="text-lg hover:text-white">
                 {Math.trunc(readingTime.minutes)}
                 {" minute read"}
               </p>
@@ -124,7 +125,7 @@ const Blog: FC = () => {
         variants={FastFadeContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-rows-auto grid-cols-2 sm:grid-cols-6 gap-2 mt-5"
+        className="flex flex-wrap gap-y-2 gap-x-3 mt-5"
       >
         {topics.map((topic, index) => (
           <Topic
@@ -139,7 +140,7 @@ const Blog: FC = () => {
         variants={FadeContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-rows-auto sm:grid-cols-1 gap-10 mt-10"
+        className="flex gap-10 mt-10"
       >
         {filteredPosts!.map((project, index) => (
           <Post {...project} key={index} />

@@ -46,7 +46,15 @@ const Wrapper: FC<{ children: ReactNode }> = ({ children }) => {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <NextLink href={"/"} passHref>
-        <a className="fixed mt-10 ml-10 pl-3 text-gray-800 dark:text-gray-200 sm:inline-block rounded-lg hover:text-gray-900 dark:hover:text-gray-50 transition-all text-lg mr-4 sm:mr-7 hidden">
+        <a
+          className="absolute sm:fixed  w-full text-lg transition-all
+          text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-50
+          inline-block sm:hidden xl:inline-block
+          text-center xl:text-left
+          mt-0 sm:mt-10
+          ml-0 sm:ml-10
+          top-[3.2rem] sm:top-0"
+        >
           benclem.dev
         </a>
       </NextLink>

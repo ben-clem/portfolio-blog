@@ -72,8 +72,8 @@ export const Image: Variants = {
     opacity: 1,
     transition: {
       type: 'spring',
-      stiffness: 260,
-      damping: 15,
+      stiffness: 150,
+      damping: 20,
     },
   },
 }

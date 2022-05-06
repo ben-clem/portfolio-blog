@@ -17,6 +17,7 @@ Types of changes:
 
 ### To add
 
+- **diplaying tags in posts**
 - **deploy**
 - package.json license field
 - posts
@@ -43,11 +44,22 @@ Types of changes:
 ### To fix
 
 - **responsive broken**
-  - **email in contact goes over**
+  - about
+  - posts
 - **white mode broken**
   - **download resume button color in light**
   - **links in posts**
 - translation: going to a post gets you back to default language
+
+### Fixed
+
+- responsive
+  - navbar & logo
+  - profile pic
+  - contact
+  - tags
+  - projects
+  - blog
 
 ## [0.0.4](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...v0.0.4) - 2022-05-06
 
