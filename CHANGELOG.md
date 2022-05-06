@@ -13,7 +13,7 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...HEAD)
+## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.4...HEAD)
 
 ### To add
 
@@ -48,6 +48,8 @@ Types of changes:
   - **download resume button color in light**
   - **links in posts**
 - translation: going to a post gets you back to default language
+
+## [0.0.4](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...v0.0.4) - 2022-05-06
 
 ### Added
 
