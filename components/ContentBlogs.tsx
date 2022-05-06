@@ -52,7 +52,7 @@ const Content: FC<{
           className="flex items-center text-xl group w-fit mt-5"
           variants={A.Fade}
         >
-          {t("viewBlogs")}
+          {t("blog")}
           <FiChevronRight className="group-hover:translate-x-1 transition-all ml-1 mt-1" />
         </motion.a>
       </Link>

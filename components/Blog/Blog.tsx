@@ -94,7 +94,7 @@ const Blog: FC = () => {
     <motion.div className="w-full" initial="hidden" animate="visible">
       <Header head={t("blogHeader")} bio={t("blogBio")} variant={"mb-2"} />
 
-      <motion.div className="flex flex-row space-x-8 mt-3">
+      {/* <motion.div className="flex flex-row space-x-8 mt-3">
         <Link href="https://dev.to/benclem" passHref>
           <motion.a
             target="_blank"
@@ -115,7 +115,7 @@ const Blog: FC = () => {
             <FiChevronRight className="group-hover:translate-x-1 transition-all ml-1 mt-1" />
           </motion.a>
         </Link>
-      </motion.div>
+      </motion.div> */}
 
       <motion.h1 variants={Fade} className="mt-12 text-bold text-2xl">
         Filter by tag

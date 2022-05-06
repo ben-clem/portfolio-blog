@@ -13,10 +13,16 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.2...HEAD)
+## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...HEAD)
 
 ### To add
 
+- **French translation**
+  - **Filter by tag**
+  - **about.mdx** (faire en rapide avec DeepL)
+  - **Download my resume** (pas besoin de mettre le FR, plus besoin d'avoir 2 versions)
+- **deploy**
+- package.json license field
 - posts
   - projects
     - portfolio/blog (when published and good enough)
@@ -27,37 +33,41 @@ Types of changes:
     - ? Road trips (Baja California, US West Coast)
     - ? Book reviews (GM charrette)
     - ? Product reviews (Huel)
-- **deploy**
-- package.json license field
-- auto-publishing to Medium & Dev.to => not sure that can work with MDX
-- **French translation**
 - Filter by tags toggle
 - auto add tags from projects & posts
 - sitemap and robots.txt: https://tuomokankaanpaa.com/blog/nextjs-seo-how-to-add-sitemap-and-robots-txt
+- auto-publishing to Medium & Dev.to => not sure that can work with MDX
 
 ### To change
 
-- Projects & Blog tags list based of added projects & blog post
-- refactor some stuff
 - kbar actions
 - get access to Next.js static images inside .mdx files to prevent having to load them from GitHub
+- refactor
 
 ### To fix
 
 - **responsive broken**
-  - email in contact goes over
+  - **email in contact goes over**
 - **white mode broken**
   - **download resume button color in light**
   - **links in posts**
+- translation: going to a post gets you back to default language
+
+### Added
+
+- posts
+  - blog
+    - Breakthrough SF
+
+## [0.0.3](https://github.com/ben-clem/portfolio-blog/compare/v0.0.2...v0.0.3) - 2022-05-05
 
 ### Added
 
 - repo link, warning WIP, report issue
-- projects posts
-  - JEECE tech test
-  - node-messenger
-- blog posts
-  - Breakthrough SF
+- posts
+  - projects
+    - JEECE tech test
+    - node-messenger
 
 ### Changed
 
