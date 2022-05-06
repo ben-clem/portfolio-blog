@@ -49,6 +49,7 @@ Types of changes:
 ### To fix
 
 - **responsive broken**
+  - email in contact goes over
 - **white mode broken**
   - **download resume button color in light**
   - **links in posts**

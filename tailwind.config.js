@@ -47,13 +47,6 @@ module.exports = {
         500: '500px',
         iphone: '320px',
       },
-      screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        '2xl': '1700px',
-      },
     },
   },
 }

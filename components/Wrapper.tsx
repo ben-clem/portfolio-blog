@@ -51,7 +51,7 @@ const Wrapper: FC<{ children: ReactNode }> = ({ children }) => {
         </a>
       </NextLink>
       <div className="flex flex-col items-center">
-        <div className="w-95 lg:w-60 2xl:w-40 xl:w-30 mt-10">
+        <div className="2xl:w-[53rem] xl:w-[53rem] lg:w-[53rem] md:w-[44rem] sm:w-[93%] w-[93%] mt-10">
           <Navbar navOpen={open} setNavOpen={setOpen} />
           {!open && <main id="main">{children}</main>}
           {/* <Footer /> */}

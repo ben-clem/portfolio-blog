@@ -91,7 +91,6 @@ pre[class*="language-"] {
 
 /* about */
 
-
 /* project */
 
 .project a {
@@ -107,7 +106,11 @@ pre[class*="language-"] {
 }
 
 .project img {
-  @apply block rounded sm:rounded-xl my-10 mx-auto lg:scale-110;
+  @apply block 
+  mx-auto
+  2xl:my-10 xl:my-10 lg:my-10 md:my-0 sm:my-0 my-0
+  2xl:scale-110 xl:scale-110 lg:scale-110 md:scale-95 sm:scale-95 scale-95
+  sm:rounded-xl rounded;
 }
 
 .project pre {
@@ -159,7 +162,11 @@ th {
 }
 
 .blog img {
-  @apply block rounded sm:rounded-xl my-24 mx-auto lg:scale-110;
+  @apply block
+  mx-auto
+  2xl:my-10 xl:my-10 lg:my-10 md:my-0 sm:my-0 my-0
+  2xl:scale-110 xl:scale-110 lg:scale-110 md:scale-95 sm:scale-95 scale-95
+  sm:rounded-xl rounded;
 }
 
 .blog pre {
