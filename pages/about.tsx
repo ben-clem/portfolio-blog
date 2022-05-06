@@ -21,12 +21,18 @@ const About: NextPage<{ about: { body: { code: string } } }> = ({ about }) => {
           <motion.h1 className="mt-12 text-5xl" variants={Fade}>
             {t("aboutHeader")}
           </motion.h1>
-          <Components.Download></Components.Download>
+          <div className="hidden sm:block">
+            <Components.Download></Components.Download>
+          </div>
         </motion.div>
       </motion.div>
+      <div className="flex sm:hidden mt-10 justify-center">
+        <Components.Download></Components.Download>
+      </div>
       <motion.p className="text-lg mt-10" variants={Fade}>
         {t("aboutBio")}
       </motion.p>
+
       <div className="blog">
         <Component components={components} />
       </div>

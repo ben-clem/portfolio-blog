@@ -43,12 +43,10 @@ Types of changes:
 
 ### To fix
 
-- **responsive broken**
-  - about
-  - posts
 - **white mode broken**
   - **download resume button color in light**
   - **links in posts**
+- **hamburger menu urls are broken when inside post**
 - translation: going to a post gets you back to default language
 
 ### Fixed
@@ -60,6 +58,7 @@ Types of changes:
   - tags
   - projects
   - blog
+  - about
 
 ## [0.0.4](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...v0.0.4) - 2022-05-06
 
