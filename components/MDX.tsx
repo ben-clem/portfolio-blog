@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import NextImage, { ImageProps } from "next/image";
 import NextLink from "next/link";
 import {
@@ -8,7 +9,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { FiCheck, FiClipboard, FiDownload, FiFileText } from "react-icons/fi";
+import { FiCheck, FiClipboard, FiDownload } from "react-icons/fi";
 
 const Link: FC<{ href: string; children: ReactNode }> = ({
   href,
@@ -160,6 +161,8 @@ const Copy: FC<{ text: string }> = ({ text }) => {
 };
 
 const Download: FC = () => {
+  const { t } = useTranslation("common");
+
   return (
     <a
       className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 flex items-center text-white py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
@@ -167,7 +170,7 @@ const Download: FC = () => {
       target="_blank"
     >
       <FiDownload className="mr-2" />
-      Download my resume
+      {t("download")}
     </a>
   );
 };

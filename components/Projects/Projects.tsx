@@ -60,7 +60,9 @@ const Post: FC<ProjectProps> = ({
       <motion.a className={tags} variants={Fade}>
         <div
           className="h-64 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
-          style={{ backgroundImage: `url("/static/img/thumbnails/projects/${slug}.jpg")` }}
+          style={{
+            backgroundImage: `url("/static/img/thumbnails/projects/${slug}.jpg")`,
+          }}
         />
         <h1 className="text-2xl mt-5 text-white text-center hover:underline">
           {title}
@@ -111,7 +113,7 @@ const Projects: FC = () => {
     <motion.div className="w-full" initial="hidden" animate="visible">
       <Header head={t("projectHeader")} bio={t("projectBio")} />
       <motion.h1 variants={Fade} className="mt-6 text-bold text-2xl">
-        Filter by tag
+        {t("filter")}
       </motion.h1>
       <motion.div
         variants={FastFadeContainer}

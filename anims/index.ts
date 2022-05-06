@@ -12,12 +12,12 @@ export const FadeContainer: Variants = {
 }
 
 export const LanguageMenu: Variants = {
-  hidden: { y: -50, opacity: 0 },
+  hidden: { y: -100, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
-      delayChildren: 0.1,
+      delayChildren: 0.05,
       staggerChildren: 0.05,
     },
   },

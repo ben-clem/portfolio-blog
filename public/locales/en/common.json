@@ -12,11 +12,13 @@
   "about": "About",
   "aboutHeader": "About me",
   "aboutBio": "Hello, my name is Benoît Clemenceau.",
+  "download": "Download my resume",
   "projectHeader": "My projects",
   "projectBio": "Here are a few projects I've worked on. I try to explain why and how I built them.",
   "blogHeader": "My posts",
   "_blogBio": "Here you can find the articles I wrote. I talk about dev, tech, and life in general. These posts are also available on dev.to and Medium.",
   "blogBio": "Here you can find the articles I wrote. I talk about dev, tech, and life in general.",
+  "filter": "Filter by tags",
   "tip": "Tip: Use ",
   "navigate": "to quickly navigate this site.",
   "lost": "Something is broken...",
@@ -25,6 +27,5 @@
   "WIP1": "This website is still a WIP, you can find the code for it ",
   "WIP2": ", look at the CHANGELOG ",
   "WIP3": ", and report bugs or request features ",
-  "WIP4": ".",
-  "there": "there"
+  "WIP4": "."
 }

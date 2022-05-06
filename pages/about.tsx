@@ -37,7 +37,7 @@ const About: NextPage<{ about: { body: { code: string } } }> = ({ about }) => {
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const about = allInfos.find(
-    (page: { slug: string }) => page.slug === "about"
+    (page: { slug: string }) => page.slug === `about-${locale}`
   )!;
 
   return {

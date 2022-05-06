@@ -17,10 +17,6 @@ Types of changes:
 
 ### To add
 
-- **French translation**
-  - **Filter by tag**
-  - **about.mdx** (faire en rapide avec DeepL)
-  - **Download my resume** (pas besoin de mettre le FR, plus besoin d'avoir 2 versions)
 - **deploy**
 - package.json license field
 - posts
@@ -58,6 +54,11 @@ Types of changes:
 - posts
   - blog
     - Breakthrough SF
+- French translation
+  - translated common.json
+  - Filter by tag
+  - about.mdx
+  - Download my resume
 
 ## [0.0.3](https://github.com/ben-clem/portfolio-blog/compare/v0.0.2...v0.0.3) - 2022-05-05
 

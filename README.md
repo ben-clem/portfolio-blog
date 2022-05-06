@@ -1,4 +1,4 @@
-![banner](/public/static/img/banner.png)
+[![banner.png](/public/static/img/banner.png "benclem.dev")](https://benclem.dev/)
 
 <p align="center">
   <a href="https://benclem.dev">
@@ -20,7 +20,6 @@
 - [TypeScript](https://typescriptlang.org)
 - [React](https://reactjs.org/) w/ [Next.js](https://nextjs.org/)
 - [contentlayer](https://www.contentlayer.dev/)
-- [rehype](https://github.com/rehypejs/rehype)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Framer Motion](https://framer.com/motion)
 - [Feather Icons](https://feathericons.com/)
