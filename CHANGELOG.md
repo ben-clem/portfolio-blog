@@ -14,11 +14,10 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v0.0.4...HEAD)
+## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v1.0.0...HEAD)
 
 ### To add
 
-- **deploy**
 - package.json license field
 - posts
   - projects
@@ -41,7 +40,14 @@ Types of changes:
 
 ### To fix
 
+- responsive: subtitle on main page goes over in FR
 - translation: going to a post gets you back to default language
+
+## [1.0.0](https://github.com/ben-clem/portfolio-blog/compare/v0.0.5...v1.0.0) - 2022-05-07
+
+### Added
+
+- Deployed with Vercel
 
 ## [0.0.5](https://github.com/ben-clem/portfolio-blog/compare/v0.0.4...v0.0.5) - 2022-05-06
 
