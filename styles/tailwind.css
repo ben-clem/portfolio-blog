@@ -24,7 +24,7 @@ h3 {
 }
 
 ::selection {
-  @apply bg-teal-300 dark:bg-teal-600 text-white;
+  @apply bg-teal-500/50 dark:bg-teal-600 text-white;
 }
 
 button {
@@ -89,12 +89,10 @@ pre[class*="language-"] {
   @apply text-white;
 }
 
-/* about */
-
 /* project */
 
 .project a {
-  @apply text-gray-900 dark:text-white hover:underline underline-offset-8;
+  @apply text-sky-700 dark:text-white hover:underline underline-offset-8;
 }
 
 .project > .header {
@@ -147,10 +145,11 @@ th {
   @apply italic border-l-4 pl-4 border-cyan-500 bg-cyan-400/20 py-1 rounded my-5;
 }
 
+/* about */
 /* blog */
 
 .blog a {
-  @apply text-gray-900 dark:text-white hover:underline underline-offset-8;
+  @apply text-sky-700 dark:text-white hover:underline underline-offset-8;
 }
 
 .blog > .header {

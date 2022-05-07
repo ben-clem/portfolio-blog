@@ -33,8 +33,8 @@ const Topic: FC<{
     <motion.button
       className={`text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity ${
         active
-          ? "bg-gray-900 dark:bg-gray-100 hover:bg-gray-700 dark:hover:bg-gray-300 text-gray-100 dark:text-gray-900"
-          : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
+          ? "bg-gray-600/75 hover:bg-gray-400 dark:bg-gray-100/75 dark:hover:bg-gray-300 text-gray-100 dark:text-gray-900"
+          : "bg-gray-300/25 hover:bg-gray-400/50 dark:bg-gray-700 dark:hover:bg-gray-700/75 text-gray-900 dark:text-gray-100"
       }`}
       onClick={() => (active ? setActiveTag("") : setActiveTag(text))}
       variants={Fade}
@@ -53,20 +53,26 @@ const Post: FC<BlogProps> = ({ slug, title, published, readingTime }) => {
       <motion.a variants={Fade}>
         <div className="flex items-center">
           <div
-            className="h-32 w-32 flex-none mr-6 bg-cover bg-no-repeat bg-center rounded-2xl ring-gray-100 dark:ring-gray-900 ring hover:ring-offset-8 border-none ring-offset-gray-100 dark:ring-offset-gray-900 hover:ring-gray-900 dark:hover:ring-white transition-all"
+            className="h-32 w-32 flex-none mr-6 bg-cover bg-no-repeat bg-center rounded-2xl border-none transition-all ring
+            dark:ring-gray-800 dark:ring-offset-gray-800 dark:hover:ring-gray-100     
+            ring-gray-200 ring-offset-gray-200  hover:ring-gray-700 hover:ring-offset-4"
             style={{
               backgroundImage: `url("/static/img/thumbnails/blog/${slug}.jpg")`,
             }}
           />
           <div className="flex items-center">
             <div>
-              <h1 className="text-3xl mb-2 text-white hover:underline">
-                {title}
-              </h1>
-              <p className="text-lg hover:text-white">
+              <h1 className="text-3xl mb-2 hover:underline">{title}</h1>
+              <p className="hidden sm:block text-lg text-gray-600 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-300">
+                {format(date, "MMMM dd, yyyy")}
+                {" · "}
+                {Math.trunc(readingTime.minutes)}
+                {" minute read"}
+              </p>
+              <p className="sm:hidden text-lg text-gray-600 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-300">
                 {format(date, "MMMM dd, yyyy")}
               </p>
-              <p className="text-lg hover:text-white">
+              <p className="sm:hidden text-lg text-gray-600 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-300">
                 {Math.trunc(readingTime.minutes)}
                 {" minute read"}
               </p>

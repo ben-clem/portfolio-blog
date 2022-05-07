@@ -12,7 +12,7 @@ const Topic: FC<{
   return (
     <motion.button
       className={
-        "text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
+        "cursor-default text-md py-0 px-2 rounded-lg flex justify-center align-center transition-opacity bg-gray-300/25 hover:bg-gray-400/50 dark:bg-gray-700 dark:hover:bg-gray-700/75 text-gray-900 dark:text-gray-100"
       }
       variants={Fade}
     >
@@ -66,7 +66,7 @@ const Post: FC<{ blog: Blog }> = ({ blog }) => {
       >
         <div className="w-full h-full absolute bg-teal-600 dark:bg-teal-600" />
       </div>
-      <h1 className="text-4xl xl:text-6xl">{blog.title}</h1>
+      <h1 className="text-4xl lg:text-5xl">{blog.title}</h1>
       <div className="flex justify-between mt-4">
         <p className="text-lg sm:text-xl flex justify-center items-center text-gray-400">
           {format(date, "MMMM dd, yyyy")}

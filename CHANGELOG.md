@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Types of changes:
+
 - `Added` for new features.
 - `Changed` for changes in existing functionality.
 - `Deprecated` for soon-to-be removed features.
@@ -35,23 +36,23 @@ Types of changes:
 
 ### To change
 
-- kbar actions
 - get access to Next.js static images inside .mdx files to prevent having to load them from GitHub
 - refactor
 
 ### To fix
 
-- **white mode broken**
-  - **download resume button color in light**
-  - **links in posts**
-- **responsive**
-  - **post header in lg - xl**
 - translation: going to a post gets you back to default language
+
+## [0.0.5](https://github.com/ben-clem/portfolio-blog/compare/v0.0.4...v0.0.5) - 2022-05-06
 
 ### Added
 
 - diplaying tags in posts
 - auto adding tags from posts
+
+### Changed
+
+- kbar actions
 
 ### Fixed
 
@@ -63,10 +64,15 @@ Types of changes:
   - projects
   - blog
   - about
+  - post header
 - hamburger menu urls broken when inside post
 - blog page not scrolling to top when accessed
 - blog page not displaying scroll to top button
-
+- light mode
+  - WIP links
+  - tag lists
+  - download resume button color in light
+  - links in posts
 
 ## [0.0.4](https://github.com/ben-clem/portfolio-blog/compare/v0.0.3...v0.0.4) - 2022-05-06
 
@@ -96,7 +102,6 @@ Types of changes:
 - README
 - updated 404 page
 - highlight / loading bar color
-
 
 ## [0.0.2](https://github.com/ben-clem/portfolio-blog/compare/v0.0.1...v0.0.2) - 2022-05-04
 

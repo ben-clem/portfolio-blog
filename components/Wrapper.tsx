@@ -47,12 +47,12 @@ const Wrapper: FC<{ children: ReactNode }> = ({ children }) => {
       </Head>
       <NextLink href={"/"} passHref>
         <a
-          className="absolute sm:fixed  w-full text-lg transition-all
+          className="absolute sm:fixed sm:w-32 w-64 left-0 right-0 text-lg transition-all
           text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-50
           inline-block sm:hidden xl:inline-block
           text-center xl:text-left
           mt-0 sm:mt-10
-          ml-0 sm:ml-10
+          ml-auto mr-auto sm:ml-10
           top-[3.2rem] sm:top-0"
         >
           benclem.dev

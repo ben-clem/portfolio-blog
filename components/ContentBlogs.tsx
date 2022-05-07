@@ -37,7 +37,7 @@ const Content: FC<{
               {typeof item.title === "string" && item.title}
             </h1>
             <div className="flex items-center justify-center h-full">
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-600 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-300">
                 {format(item.published)}
                 {" · "}
                 {Math.trunc(item.readingTime.minutes)}

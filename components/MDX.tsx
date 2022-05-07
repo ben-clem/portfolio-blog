@@ -166,7 +166,7 @@ const Download: FC<{ hidden?: boolean }> = ({ hidden = false }) => {
   return (
     <a
       hidden={hidden}
-      className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 flex items-center text-white py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
+      className="bg-gray-400/25 hover:bg-gray-400/50 dark:bg-gray-700 dark:hover:bg-gray-700/75 text-gray-900 dark:text-gray-100 flex items-center py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
       href="/static/Resume v4.1 EN (ECE career fair 2021).pdf"
       target="_blank"
     >

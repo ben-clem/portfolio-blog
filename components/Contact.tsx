@@ -15,7 +15,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
     <>
       <div
         className={
-          "flex sm:flex-row flex-col mb-8 p-5 sm:pb-5 pb-2 md:p-10 rounded-lg border-gray-200 dark:border-gray-700 border-2 " +
+          "flex sm:flex-row flex-col mb-8 p-5 sm:pb-5 pb-2 md:p-10 rounded-lg border-gray-300 dark:border-gray-700 border-2" +
           " " +
           variant
         }
@@ -26,7 +26,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
         </div>
 
         <motion.div
-          className="flex flex-col sm:pt-3 pt-5 sm:ml-10 mt-5 sm:border-l sm:border-t-0 border-t border-gray-500 dark:border-gray-200"
+          className="flex flex-col sm:pt-3 pt-5 sm:ml-10 mt-5 sm:border-l-2 sm:border-t-0 border-t border-gray-300 dark:border-gray-700"
           variants={A.FadeContainer}
         >
           {[
@@ -72,7 +72,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
             href="https://github.com/ben-clem/portfolio-blog"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
+            className="text-sky-700 dark:text-gray-100 hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
@@ -84,7 +84,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
             href="https://github.com/ben-clem/portfolio-blog/blob/master/CHANGELOG.md"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
+            className="text-sky-700 dark:text-white hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
@@ -96,7 +96,7 @@ const Contact: FC<{ variant?: string }> = ({ variant = "mt-28" }) => {
             href="https://github.com/ben-clem/portfolio-blog/issues"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-900 dark:text-white hover:underline underline-offset-8"
+            className="text-sky-700 dark:text-white hover:underline underline-offset-8"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             variants={A.Fade}
