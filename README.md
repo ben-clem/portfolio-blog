@@ -39,7 +39,10 @@ yarn dev
 
 This project is largely inspired by [harshhhdev](https://github.com/harshhhdev) / [harshhhdev.github.io](https://github.com/harshhhdev/harshhhdev.github.io), who I thank for his work.
 
-[//]: # ([![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/ben-clem) <- disabled for the moment because requires a SSN)
+<!---
+disabled for the moment because requires a SSN
+[![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/ben-clem)
+-->
 
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/benclem)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://bit.ly/paypal-donate-benclem)
