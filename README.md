@@ -38,3 +38,9 @@ yarn dev
 # 💡 Inspiration
 
 This project is largely inspired by [harshhhdev](https://github.com/harshhhdev) / [harshhhdev.github.io](https://github.com/harshhhdev/harshhhdev.github.io), who I thank for his work.
+
+[//]: # ([![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/ben-clem) <- disabled for the moment because requires a SSN)
+
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/benclem)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://bit.ly/paypal-donate-benclem)
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/benclem)
