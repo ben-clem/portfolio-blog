@@ -38,3 +38,7 @@ yarn dev
 # 💡 Inspiration
 
 This project is largely inspired by [harshhhdev](https://github.com/harshhhdev) / [harshhhdev.github.io](https://github.com/harshhhdev/harshhhdev.github.io), who I thank for his work.
+
+# 📜 License
+
+[MIT](/LICENSE). Feel free to use this project to build your own portfolio/blog! Just make sure to mention me.

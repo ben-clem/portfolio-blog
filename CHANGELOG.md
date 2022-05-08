@@ -16,33 +16,6 @@ Types of changes:
 
 ## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v1.0.0...HEAD)
 
-### To add
-
-- package.json license field
-- posts
-  - projects
-    - portfolio/blog (when published and good enough)
-  - blog
-    - ? Gary Boodhoo's Image Garden workshop (https://deepdreamvisionquest.atlassian.net/wiki/spaces/imagegarden/overview, https://drive.google.com/drive/u/0/folders/1EeArG2maO-3IMfkNs33fels769O_p4Ly)
-    - ? GoodSync review and config
-    - ? BetterTouchTool review and config
-    - ? Road trips (Baja California, US West Coast)
-    - ? Book reviews (GM charrette)
-    - ? Product reviews (Huel)
-- Filter by tags toggle (sm:minimize-button open-button)
-- sitemap and robots.txt: https://tuomokankaanpaa.com/blog/nextjs-seo-how-to-add-sitemap-and-robots-txt
-- auto-publishing to Medium & Dev.to => not sure that can work with MDX
-
-### To change
-
-- get access to Next.js static images inside .mdx files to prevent having to load them from GitHub
-- refactor
-
-### To fix
-
-- responsive: subtitle on main page goes over in FR
-- translation: going to a post gets you back to default language
-
 ## [1.0.0](https://github.com/ben-clem/portfolio-blog/compare/v0.0.5...v1.0.0) - 2022-05-07
 
 ### Added
