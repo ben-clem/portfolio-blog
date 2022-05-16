@@ -1,0 +1,57 @@
+"filename", "language", "JSON with Comments", "JSON", "JavaScript", "TypeScript React", "TypeScript", "CSS", "Markdown", "Markdown React", "YAML", "comment", "blank", "total"
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/.eslintrc.json", "JSON", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/.github/FUNDING.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 4
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/CHANGELOG.md", "Markdown", 0, 0, 0, 0, 0, 0, 90, 0, 0, 0, 38, 128
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 11, 45
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/anims/WavyText.tsx", "TypeScript React", 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 7, 83
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/anims/index.ts", "TypeScript", 0, 0, 0, 0, 71, 0, 0, 0, 0, 0, 9, 80
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Blog/Blog.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 22, 14, 161
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Blog/Post.tsx", "TypeScript React", 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 9, 103
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Contact.tsx", "TypeScript React", 0, 0, 0, 121, 0, 0, 0, 0, 0, 0, 8, 129
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/ContentBlogs.tsx", "TypeScript React", 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 6, 69
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/ContentProjects.tsx", "TypeScript React", 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 6, 74
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Header.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 3, 29
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Intro.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 8, 128
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/MDX.tsx", "TypeScript React", 0, 0, 0, 178, 0, 0, 0, 0, 0, 0, 22, 200
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Nav/Nav.tsx", "TypeScript React", 0, 0, 0, 248, 0, 0, 0, 0, 0, 1, 13, 262
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Nav/nav.css", "CSS", 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 9, 50
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Palette.tsx", "TypeScript React", 0, 0, 0, 165, 0, 0, 0, 0, 0, 1, 11, 177
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Projects/Post.tsx", "TypeScript React", 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 8, 100
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Projects/Projects.tsx", "TypeScript React", 0, 0, 0, 110, 0, 0, 0, 0, 0, 0, 11, 121
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Top.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 7, 43
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/components/Wrapper.tsx", "TypeScript React", 0, 0, 0, 68, 0, 0, 0, 0, 0, 1, 5, 74
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/about-en.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 6, 23
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/about-fr.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 6, 23
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/blog/SF.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 22, 114
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/example/card.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 182, 0, 0, 57, 239
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/example/cursor.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 18, 73
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/example/palette.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 360, 0, 0, 102, 462
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/example/scraping.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 46, 137
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/example/translating.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 60, 175
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/projects/JEECE-collab.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 61, 0, 0, 24, 85
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/content/projects/node-messenger.mdx", "Markdown React", 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 23, 87
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/contentlayer.config.ts", "TypeScript", 0, 0, 0, 0, 34, 0, 0, 0, 0, 54, 3, 91
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/hooks/useWindowDimensions.ts", "TypeScript", 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 8, 34
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/lib/actions.ts", "TypeScript", 0, 0, 0, 0, 90, 0, 0, 0, 0, 0, 3, 93
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 6
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/next-i18next.config.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/next.config.js", "JavaScript", 0, 0, 13, 0, 0, 0, 0, 0, 0, 1, 3, 17
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/package.json", "JSON", 0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 1, 68
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/404.tsx", "TypeScript React", 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 5, 38
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/_app.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 6, 42
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/_document.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 2, 22
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/about.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 7, 55
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/blog/[slug].tsx", "TypeScript React", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 6, 40
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/blog/index.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/index.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/projects/[slug].tsx", "TypeScript React", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 6, 40
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/pages/projects/index.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/postcss.config.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/public/locales/en/common.json", "JSON", 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 1, 32
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/public/locales/fr/common.json", "JSON", 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 33
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/public/manifest.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/styles/syntax.css", "CSS", 0, 0, 0, 0, 0, 47, 0, 0, 0, 0, 8, 55
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/styles/tailwind.css", "CSS", 0, 0, 0, 0, 0, 151, 0, 0, 0, 4, 49, 204
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/tailwind.config.js", "JavaScript", 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 1, 53
+"/Users/benzinho/dev/side-projects/portfolio/portfolio-blog/tsconfig.json", "JSON with Comments", 7, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 33
+"Total", "-", 7, 133, 77, 1856, 221, 239, 124, 1054, 2, 115, 698, 4526
