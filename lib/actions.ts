@@ -46,7 +46,7 @@ const actions: Action[] = [
     section: "Navigation",
     perform: () =>
       window.open(
-        "/static/Benoît Clemenceau Resume v5.4.pdf",
+        "/static/Benoît Clemenceau Resume v5.4.pdf",
         "_blank"
       ),
   },
@@ -67,7 +67,7 @@ const actions: Action[] = [
     keywords: "linkedin resume work hire social cv",
     section: "Contact",
     perform: () =>
-      window.open("https://www.linkedin.com/in/benclem/", "_blank"),
+      window.open("https://www.linkedin.com/in/benclem", "_blank"),
   },
   {
     id: "email",

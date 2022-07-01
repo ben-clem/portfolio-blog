@@ -167,7 +167,7 @@ const Download: FC<{ hidden?: boolean }> = ({ hidden = false }) => {
     <a
       hidden={hidden}
       className="bg-gray-400/25 hover:bg-gray-400/50 dark:bg-gray-700 dark:hover:bg-gray-700/75 text-gray-900 dark:text-gray-100 flex items-center py-3 px-4 text-xl rounded-lg transition-colors no-outline w-fit h-fit header"
-      href="/static/Benoît Clemenceau Resume v5.4.pdf"
+      href="/static/Benoît Clemenceau Resume v5.4.pdf"
       target="_blank"
     >
       <FiDownload className="mr-2" />
