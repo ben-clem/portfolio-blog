@@ -46,7 +46,7 @@ const actions: Action[] = [
     section: "Navigation",
     perform: () =>
       window.open(
-        "/static/Resume v4.1 EN (ECE career fair 2021).pdf",
+        "/static/Benoît Clemenceau Resume v5.4.pdf",
         "_blank"
       ),
   },
