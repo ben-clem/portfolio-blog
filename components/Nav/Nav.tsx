@@ -165,7 +165,8 @@ const Navbar: FC<{
   const router = useRouter();
   const { t } = useTranslation("common");
   const [open, setOpen] = useState(false);
-  const links = ["home", "projects", "blog", "about"];
+  /* const links = ["home", "projects", "blog", "about"]; */
+  const links = ["home", "projects", "blog"];
   const boundary = useDetectClickOutside({ onTriggered: () => setOpen(false) });
 
   return (

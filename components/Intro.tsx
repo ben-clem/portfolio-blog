@@ -92,15 +92,15 @@ const Intro: FC = () => {
         >
           {t("tagline")}
         </motion.p>
-        <Wavy
+        {/* <Wavy
           text={t("bio")}
           heading="p"
           className="sm:text-xl text-lg sm:mt-5 mt-3 mr-20"
-        />
+        /> */}
 
         <Socials />
 
-        <Link href="/about" passHref>
+        {/* <Link href="/about" passHref>
           <motion.a
             className="flex items-center text-xl group w-fit sm:mt-7 mt-5"
             variants={A.Fade}
@@ -108,7 +108,7 @@ const Intro: FC = () => {
             {t("about")}
             <FiChevronRight className="group-hover:translate-x-1 transition-all ml-1 mt-1" />
           </motion.a>
-        </Link>
+        </Link> */}
       </motion.div>
 
       <motion.div variants={A.Image} className="hidden sm:block">
