@@ -16,6 +16,10 @@ Types of changes:
 
 ## [Unreleased](https://github.com/ben-clem/portfolio-blog/compare/v1.0.0...HEAD)
 
+### Added
+
+- Home Mac Agents app page and privacy policy at `/home-mac-agents` and `/home-mac-agents/privacy`
+
 ## [1.0.0](https://github.com/ben-clem/portfolio-blog/compare/v0.0.5...v1.0.0) - 2022-05-07
 
 ### Added
