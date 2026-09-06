@@ -152,6 +152,10 @@ th {
   @apply text-sky-700 dark:text-white hover:underline underline-offset-8;
 }
 
+.blog h2 {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-2;
+}
+
 .blog > .header {
   @apply hover:no-underline;
 }
