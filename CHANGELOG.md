@@ -20,6 +20,10 @@ Types of changes:
 
 - Home Mac Agents app page and privacy policy at `/home-mac-agents` and `/home-mac-agents/privacy`
 
+### Changed
+
+- Pin Vercel builds to Node.js 22.x and ignore outdated Yarn engine checks so deploys are not stuck on discontinued 16.x
+
 ## [1.0.0](https://github.com/ben-clem/portfolio-blog/compare/v0.0.5...v1.0.0) - 2022-05-07
 
 ### Added
