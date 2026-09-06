@@ -13,6 +13,9 @@
   "author": "Benoît Clemenceau <benoit.clemenceau@mac.com> (http://benclem.dev)",
   "funding": "https://www.buymeacoffee.com/benclem",
   "repository": "github:ben-clem/portfolio-blog",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
